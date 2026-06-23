@@ -28,6 +28,10 @@ $required = @(
     'RepairContentServerSource',
     'NeverAttemptPayloadDownload',
     'final preflight',
+    'Post100Seconds',
+    'phase-post100-timeout',
+    'Stop-OwnedProcessTree',
+    'DISM CheckHealth fast preflight',
     'dism /online /cleanup-image /restorehealth; $d=$LASTEXITCODE; sfc /scannow'
 )
 

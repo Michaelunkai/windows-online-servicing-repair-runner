@@ -1,5 +1,6 @@
 param(
-    [int]$TakeoverSeconds = 20
+    [int]$TakeoverSeconds = 20,
+    [int]$Post100Seconds = 45
 )
 
 $ErrorActionPreference = 'Continue'
@@ -25,6 +26,8 @@ $script:LastProgressStatus = ''
 $script:LastProgressPercent = -1
 $script:LastMilestonePercent = -1
 $script:RestoreHealthSucceeded = $false
+$script:LastNativeProgressAt = [datetime]::MinValue
+$script:Native100At = [datetime]::MinValue
 $script:PrintedLineKeys = New-Object 'System.Collections.Generic.HashSet[string]'
 
 function Stamp { Get-Date -Format 'HH:mm:ss' }
@@ -119,6 +122,38 @@ function Get-NativePercent([string]$Line) {
     return -1
 }
 
+function Stop-OwnedProcessTree {
+    param(
+        [int[]]$RootIds,
+        [string]$Reason
+    )
+    $queue = New-Object System.Collections.Generic.Queue[int]
+    $all = New-Object 'System.Collections.Generic.HashSet[int]'
+    foreach ($id in $RootIds) {
+        if ($id -gt 0 -and $all.Add($id)) { $queue.Enqueue($id) }
+    }
+    while ($queue.Count -gt 0) {
+        $parent = $queue.Dequeue()
+        Get-CimInstance Win32_Process -ErrorAction SilentlyContinue |
+            Where-Object { $_.ParentProcessId -eq $parent } |
+            ForEach-Object {
+                if ($all.Add([int]$_.ProcessId)) { $queue.Enqueue([int]$_.ProcessId) }
+            }
+    }
+
+    foreach ($name in 'Dism','DismHost','sfc','chkdsk','TiWorker') {
+        Get-Process -Name $name -ErrorAction SilentlyContinue |
+            Where-Object { $_.StartTime -ge (Get-Date).AddHours(-8) } |
+            ForEach-Object { [void]$all.Add([int]$_.Id) }
+    }
+
+    $ids = @($all | Sort-Object -Descending)
+    if ($ids.Count -gt 0) {
+        Show-Line ("owned-tree stop: reason={0}; pids={1}" -f $Reason, ($ids -join ',')) 'WARN' (Get-Overall $script:PhaseIndex $script:PhaseDisplayPercent) $script:PhaseDisplayPercent
+        foreach ($id in $ids) { Stop-Process -Id $id -Force -ErrorAction SilentlyContinue }
+    }
+}
+
 function Read-NewText {
     param(
         [string]$Path,
@@ -166,6 +201,8 @@ function Read-NewText {
         $script:LastNativeLine = $line
         $pct = Get-NativePercent $line
         if ($pct -ge 0) { $script:LastNativePercent = [Math]::Max($script:LastNativePercent, $pct) }
+        if ($pct -ge 0 -and $pct -ge $script:PhaseDisplayPercent) { $script:LastNativeProgressAt = Get-Date }
+        if ($pct -ge 100 -and $script:Native100At -eq [datetime]::MinValue) { $script:Native100At = Get-Date }
         $phasePct = [Math]::Max($script:PhaseDisplayPercent, [Math]::Max(0, $script:LastNativePercent))
         $script:PhaseDisplayPercent = $phasePct
         $overall = Get-Overall $script:PhaseIndex $phasePct
@@ -526,6 +563,8 @@ function Invoke-Phase {
     $script:LastNativePercent = -1
     $script:PhaseDisplayPercent = 0
     $script:DuplicateNativeCount = 0
+    $script:LastNativeProgressAt = [datetime]::MinValue
+    $script:Native100At = [datetime]::MinValue
 
     New-Item -ItemType Directory -Force -Path $Root -ErrorAction SilentlyContinue | Out-Null
     $safeName = $Name -replace '[^A-Za-z0-9]+', '_'
@@ -562,6 +601,10 @@ function Invoke-Phase {
 
         $elapsed = [int]((Get-Date) - $start).TotalSeconds
         $idle = [int]((Get-Date) - $lastMove).TotalSeconds
+        $post100Elapsed = -1
+        if ($script:Native100At -ne [datetime]::MinValue) {
+            $post100Elapsed = [int]((Get-Date) - $script:Native100At).TotalSeconds
+        }
         $antiStallPct = [int][Math]::Min(99, ($elapsed * 100 / [Math]::Max(1, ($StallSeconds * 2))))
         $nativePct = 0
         if ($script:LastNativePercent -ge 0) { $nativePct = $script:LastNativePercent }
@@ -569,12 +612,13 @@ function Invoke-Phase {
         $script:PhaseDisplayPercent = $phasePct
         $overall = Get-Overall $script:PhaseIndex $phasePct
         $safeStop = [Math]::Max(0, $StallSeconds - $idle)
+        $post100Stop = [Math]::Max(0, $Post100Seconds - [Math]::Max(0, $post100Elapsed))
 
         switch ($script:Seq % 8) {
             0 { $msg = '{0} {1}%: native percent when available, otherwise anti-stall timer; elapsed={2}' -f $Name, $phasePct, (Format-Span ((Get-Date) - $start)) }
             1 { $msg = '{0} evidence: stdout +{1}B, stderr +{2}B, child CPU total {3:n2}s' -f $Name, $outDelta, $errDelta, $cpu }
             2 { $msg = '{0} live logs: CBS updated {1}, DISM updated {2}, movement={3}' -f $Name, (Get-AgeText $cbsStamp), (Get-AgeText $dismStamp), $moved }
-            3 { $msg = '{0} safety clock: idle={1}s; auto-stop/retry protection in {2}s if nothing changes' -f $Name, $idle, $safeStop }
+            3 { $msg = '{0} safety clock: idle={1}s; post100={2}s; auto-stop/retry in {3}s' -f $Name, $idle, $post100Elapsed, $(if($post100Elapsed -ge 0){$post100Stop}else{$safeStop}) }
             4 { $msg = '{0} process map: {1}' -f $Name, (Get-ProcessSummary $children) }
             5 { $msg = '{0} last native message: {1}' -f $Name, $script:LastNativeLine }
             6 { $msg = '{0} overall repair progress now {1}% across all checks and repairs; suppressed duplicate native lines={2}' -f $Name, $overall, $script:DuplicateNativeCount }
@@ -583,15 +627,19 @@ function Invoke-Phase {
         Update-ProgressBar -Activity ("Codex online Windows repair - {0}" -f $Name) -Status $msg -Overall $overall
         Show-ProgressMilestone -Name $Name -Overall $overall -Phase $phasePct -Detail $msg
 
+        if ($post100Elapsed -ge $Post100Seconds) {
+            Show-Line ("phase-post100-timeout: {0} showed 100% but did not exit within {1}s; stopping owned tree and moving to next repair path" -f $Name, $Post100Seconds) 'WARN' $overall $phasePct
+            Stop-OwnedProcessTree -RootIds @($proc.Id) -Reason ("post-100 timeout in {0}" -f $Name)
+            return 126
+        }
         if ($idle -ge $StallSeconds) {
             Show-Line ("phase-stall: {0} had no output/CPU/log movement for {1}s; stopping owned tree" -f $Name, $idle) 'WARN' $overall $phasePct
-            Stop-Process -Id $proc.Id -Force -ErrorAction SilentlyContinue
-            $children | ForEach-Object { Stop-Process -Id $_.Id -Force -ErrorAction SilentlyContinue }
+            Stop-OwnedProcessTree -RootIds @($proc.Id) -Reason ("idle stall in {0}" -f $Name)
             return 124
         }
         if ($elapsed -gt $TimeoutSeconds) {
             Show-Line ("phase-timeout: {0} exceeded {1}s; stopping owned command" -f $Name, $TimeoutSeconds) 'ERROR' $overall $phasePct
-            Stop-Process -Id $proc.Id -Force -ErrorAction SilentlyContinue
+            Stop-OwnedProcessTree -RootIds @($proc.Id) -Reason ("hard timeout in {0}" -f $Name)
             return 125
         }
     }
@@ -625,7 +673,7 @@ Invoke-TakeoverGate -Seconds $TakeoverSeconds
 $failures = 0
 $steps = @(
     @('CHKDSK online scan', "$env:windir\System32\chkdsk.exe", 'C: /scan /perf', 180, 7200),
-    @('DISM ScanHealth', "$env:windir\System32\dism.exe", '/Online /Cleanup-Image /ScanHealth', 180, 7200),
+    @('DISM CheckHealth fast preflight', "$env:windir\System32\dism.exe", '/Online /Cleanup-Image /CheckHealth', 90, 900),
     @('DISM RestoreHealth resilient', '', '', 240, 10800),
     @('SFC scannow', "$env:windir\System32\sfc.exe", '/scannow', 180, 7200),
     @('DISM CheckHealth', "$env:windir\System32\dism.exe", '/Online /Cleanup-Image /CheckHealth', 120, 3600),

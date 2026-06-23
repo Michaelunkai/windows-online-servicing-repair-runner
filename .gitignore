@@ -1,0 +1,10 @@
+repair-runs/
+*.tmp
+*.bak
+*.log
+!artifacts/latest-run/visible-repair-v4.log
+*.etl
+*.cab
+*.zip
+Thumbs.db
+Desktop.ini

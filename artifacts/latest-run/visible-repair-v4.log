@@ -1,0 +1,1013 @@
+﻿[21:56:23] [INFO] #000001 overall=0% phase=0% :: online-repair-v4 start; log=C:\Users\micha\Documents\Codex\2026-06-23\create-update-and-run-script-that\repair-runs\CodexOnlineRepairV4-904eba7e19254742a4b735faae9620ca\visible-repair-v4.log; mode=visible PS5, rotating per-second progress, native output streaming
+[21:56:23] [INFO] #000002 overall=2% phase=20% :: repair-source policy snapshot saved: C:\Users\micha\Documents\Codex\2026-06-23\create-update-and-run-script-that\repair-runs\CodexOnlineRepairV4-904eba7e19254742a4b735faae9620ca\repair-source-policy-before.json
+[21:56:23] [INFO] #000003 overall=2% phase=25% :: repair-source policy opened: Windows Update allowed for component repair; previous values preserved in the run log folder
+[21:56:23] [INFO] #000004 overall=2% phase=10% :: service setup cryptsvc: [SC] ChangeServiceConfig SUCCESS
+[21:56:23] [INFO] #000005 overall=2% phase=15% :: service ready: cryptsvc status=Running
+[21:56:23] [INFO] #000006 overall=2% phase=10% :: service setup bits: [SC] ChangeServiceConfig SUCCESS
+[21:56:28] [INFO] #000007 overall=2% phase=15% :: service ready: bits status=Running
+[21:56:28] [INFO] #000008 overall=2% phase=10% :: service setup wuauserv: [SC] ChangeServiceConfig SUCCESS
+[21:56:28] [INFO] #000009 overall=2% phase=15% :: service ready: wuauserv status=Running
+[21:56:28] [INFO] #000010 overall=2% phase=10% :: service setup TrustedInstaller: [SC] ChangeServiceConfig SUCCESS
+[21:56:28] [INFO] #000011 overall=2% phase=15% :: service ready: TrustedInstaller status=Running
+[21:56:28] [INFO] #000012 overall=2% phase=10% :: service setup msiserver: [SC] ChangeServiceConfig SUCCESS
+[21:56:28] [INFO] #000013 overall=2% phase=15% :: service ready: msiserver status=Running
+[21:56:28] [INFO] #000014 overall=0% phase=0% :: TrustedInstaller setup: [SC] ChangeServiceConfig SUCCESS
+[21:56:28] [INFO] #000015 overall=0% phase=0% :: TrustedInstaller start state: [SC] StartService FAILED 1056:
+[21:56:28] [INFO] #000016 overall=0% phase=0% :: TrustedInstaller start state: An instance of the service is already running.
+[21:56:28] [INFO] #000017 overall=1% phase=0% :: takeover safety 0%: not starting duplicate DISM; one clean repair owner will run after old owner ends
+[21:56:29] [INFO] #000018 overall=1% phase=5% :: takeover progress 5%: bounded wait, not an endless loop; stale owners are recycled at 100%
+[21:56:30] [INFO] #000019 overall=1% phase=10% :: takeover diagnosis 10%: current owner map is Dism#18044 cpu=0.05s; Dism#31276 cpu=0.02s; Dism#32836 cpu=0.02s; DismHost#17252 cpu=0.03s; DismHost#19972 cpu=0.02s; DismHost#20688 cpu=0.23s; DismHost#23484 cpu=0.08s; TiWorker#11924 cpu=472.53s
+[21:56:31] [INFO] #000020 overall=1% phase=15% :: takeover next-step 15%: 17s until this command takes ownership if still blocked
+[21:56:32] [INFO] #000021 overall=1% phase=20% :: takeover clock 20%: elapsed=00:00:04; idle=0s; log freshness CBS=1s ago DISM=108s ago
+[21:56:33] [INFO] #000022 overall=1% phase=25% :: takeover 25%: external owner blocks our run; action in 15s; active=Dism#18044 cpu=0.05s; Dism#31276 cpu=0.02s; Dism#32836 cpu=0.02s; DismHost#17252 cpu=0.03s; DismHost#19972 cpu=0.02s; DismHost#20688 cpu=0.23s; DismHost#23484 cpu=0.08s; TiWorker#11924 cpu=472.53s
+[21:56:34] [INFO] #000023 overall=1% phase=30% :: takeover evidence 30%: CPU/log movement=True; idle=0s; CBS=1s ago; DISM=110s ago
+[21:56:35] [INFO] #000024 overall=1% phase=35% :: takeover safety 35%: not starting duplicate DISM; one clean repair owner will run after old owner ends
+[21:56:36] [INFO] #000025 overall=1% phase=40% :: takeover progress 40%: bounded wait, not an endless loop; stale owners are recycled at 100%
+[21:56:37] [INFO] #000026 overall=1% phase=45% :: takeover diagnosis 45%: current owner map is Dism#18044 cpu=0.05s; Dism#31276 cpu=0.02s; Dism#32836 cpu=0.02s; DismHost#17252 cpu=0.03s; DismHost#19972 cpu=0.02s; DismHost#20688 cpu=0.23s; DismHost#23484 cpu=0.08s; TiWorker#11924 cpu=472.53s
+[21:56:38] [INFO] #000027 overall=1% phase=50% :: takeover next-step 50%: 10s until this command takes ownership if still blocked
+[21:56:39] [INFO] #000028 overall=1% phase=55% :: takeover clock 55%: elapsed=00:00:11; idle=0s; log freshness CBS=0s ago DISM=115s ago
+[21:56:40] [INFO] #000029 overall=1% phase=60% :: takeover 60%: external owner blocks our run; action in 8s; active=Dism#18044 cpu=0.05s; Dism#31276 cpu=0.02s; Dism#32836 cpu=0.02s; DismHost#17252 cpu=0.03s; DismHost#19972 cpu=0.02s; DismHost#20688 cpu=0.23s; DismHost#23484 cpu=0.08s; TiWorker#11924 cpu=472.53s
+[21:56:41] [INFO] #000030 overall=1% phase=65% :: takeover evidence 65%: CPU/log movement=True; idle=0s; CBS=0s ago; DISM=117s ago
+[21:56:42] [INFO] #000031 overall=1% phase=70% :: takeover safety 70%: not starting duplicate DISM; one clean repair owner will run after old owner ends
+[21:56:43] [INFO] #000032 overall=1% phase=75% :: takeover progress 75%: bounded wait, not an endless loop; stale owners are recycled at 100%
+[21:56:44] [INFO] #000033 overall=1% phase=80% :: takeover diagnosis 80%: current owner map is Dism#18044 cpu=0.05s; Dism#31276 cpu=0.02s; Dism#32836 cpu=0.02s; DismHost#17252 cpu=0.03s; DismHost#19972 cpu=0.02s; DismHost#20688 cpu=0.23s; DismHost#23484 cpu=0.08s; TiWorker#11924 cpu=472.53s
+[21:56:45] [INFO] #000034 overall=1% phase=85% :: takeover next-step 85%: 3s until this command takes ownership if still blocked
+[21:56:46] [INFO] #000035 overall=1% phase=90% :: takeover clock 90%: elapsed=00:00:18; idle=0s; log freshness CBS=1s ago DISM=0s ago
+[21:56:47] [INFO] #000036 overall=1% phase=95% :: takeover 95%: external owner blocks our run; action in 1s; active=Dism#18044 cpu=0.05s; Dism#31276 cpu=0.02s; DismHost#17252 cpu=0.03s; DismHost#20688 cpu=0.23s; DismHost#23484 cpu=0.08s; TiWorker#11924 cpu=472.53s
+[21:56:48] [INFO] #000037 overall=1% phase=99% :: takeover evidence 99%: CPU/log movement=True; idle=0s; CBS=1s ago; DISM=3s ago
+[21:56:48] [WARN] #000038 overall=1% phase=100% :: takeover action 100%: stopping external/stale servicing owner so this visible command owns the repair path
+[21:56:51] [INFO] #000039 overall=0% phase=0% :: phase-start: CHKDSK online scan; command=C:\Windows\System32\chkdsk.exe C: /scan /perf
+[21:56:52] [OUTPUT] #000040 overall=0% phase=0% :: CHKDSK online scan native says: The type of the file system is NTFS.
+[21:56:53] [INFO] #000041 overall=0% phase=1% :: CHKDSK online scan 1%: native percent when available, otherwise anti-stall timer; elapsed=00:00:01
+[21:56:54] [INFO] #000042 overall=0% phase=2% :: CHKDSK online scan evidence: stdout +0B, stderr +0B, child CPU total 3.72s
+[21:56:55] [OUTPUT] #000043 overall=0% phase=2% :: CHKDSK online scan native says: Stage 1: Examining basic file system structure ...
+[21:56:55] [OUTPUT] #000044 overall=0% phase=2% :: CHKDSK online scan native says: Progress: 0 of 4485888 done; Stage:  0%; Total:  0%; ETA:   3:35:36
+[21:56:55] [OUTPUT] #000045 overall=0% phase=2% :: CHKDSK online scan native says: Progress: 52347 of 4485888 done; Stage:  1%; Total:  0%; ETA:   3:34:44 .
+[21:56:55] [INFO] #000046 overall=0% phase=2% :: CHKDSK online scan last native message: Progress: 52347 of 4485888 done; Stage:  1%; Total:  0%; ETA:   3:34:44 .
+[21:56:56] [OUTPUT] #000047 overall=0% phase=2% :: CHKDSK online scan native says: Progress: 133121 of 4485888 done; Stage:  2%; Total:  1%; ETA:   3:33:16 ..
+[21:56:56] [OUTPUT] #000048 overall=0% phase=2% :: CHKDSK online scan native says: Progress: 195365 of 4485888 done; Stage:  4%; Total:  2%; ETA:   0:00:59 ...
+[21:56:56] [INFO] #000049 overall=0% phase=3% :: CHKDSK online scan 3%: native percent when available, otherwise anti-stall timer; elapsed=00:00:04
+[21:56:57] [OUTPUT] #000050 overall=0% phase=3% :: CHKDSK online scan native says: Progress: 275641 of 4485888 done; Stage:  6%; Total:  2%; ETA:   0:01:00
+[21:56:57] [OUTPUT] #000051 overall=0% phase=3% :: CHKDSK online scan native says: Progress: 377531 of 4485888 done; Stage:  8%; Total:  3%; ETA:   0:01:00 .
+[21:56:57] [INFO] #000052 overall=0% phase=3% :: CHKDSK online scan safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[21:56:58] [OUTPUT] #000053 overall=0% phase=4% :: CHKDSK online scan native says: Progress: 467853 of 4485888 done; Stage: 10%; Total:  4%; ETA:   0:01:00 ..
+[21:56:58] [OUTPUT] #000054 overall=0% phase=5% :: CHKDSK online scan native says: Progress: 578994 of 4485888 done; Stage: 12%; Total:  5%; ETA:   0:01:00 ...
+[21:56:58] [INFO] #000055 overall=0% phase=5% :: CHKDSK online scan overall repair progress now 0% across all checks and repairs; suppressed duplicate native lines=0
+[21:56:59] [OUTPUT] #000056 overall=0% phase=5% :: CHKDSK online scan native says: Progress: 656600 of 4485888 done; Stage: 14%; Total:  5%; ETA:   0:01:00
+[21:56:59] [OUTPUT] #000057 overall=0% phase=6% :: CHKDSK online scan native says: Progress: 763857 of 4485888 done; Stage: 17%; Total:  6%; ETA:   0:00:59 .
+[21:56:59] [INFO] #000058 overall=0% phase=6% :: CHKDSK online scan evidence: stdout +154B, stderr +0B, child CPU total 12.94s
+[21:57:00] [OUTPUT] #000059 overall=1% phase=7% :: CHKDSK online scan native says: Progress: 871239 of 4485888 done; Stage: 19%; Total:  7%; ETA:   0:00:59 ..
+[21:57:00] [OUTPUT] #000060 overall=1% phase=8% :: CHKDSK online scan native says: Progress: 1008948 of 4485888 done; Stage: 22%; Total:  8%; ETA:   0:00:55 ...
+[21:57:00] [INFO] #000061 overall=1% phase=8% :: CHKDSK online scan process map: chkdsk#31244 cpu=5.06s; sfc#20816 cpu=0.03s; TiWorker#33224 cpu=9.81s
+[21:57:01] [OUTPUT] #000062 overall=1% phase=9% :: CHKDSK online scan native says: Progress: 1127034 of 4485888 done; Stage: 25%; Total:  9%; ETA:   0:00:54
+[21:57:01] [OUTPUT] #000063 overall=1% phase=10% :: CHKDSK online scan native says: Progress: 1292074 of 4485888 done; Stage: 28%; Total: 10%; ETA:   0:00:52 .
+[21:57:01] [INFO] #000064 overall=1% phase=10% :: CHKDSK online scan watchdog: no silent hang allowed; timeout=7200s elapsed=10s idle=0s
+[21:57:02] [OUTPUT] #000065 overall=1% phase=12% :: CHKDSK online scan native says: Progress: 1521267 of 4485888 done; Stage: 33%; Total: 12%; ETA:   0:00:47 ..
+[21:57:02] [OUTPUT] #000066 overall=1% phase=14% :: CHKDSK online scan native says: Progress: 1801182 of 4485888 done; Stage: 40%; Total: 14%; ETA:   0:00:43 ...
+[21:57:02] [OUTPUT] #000067 overall=2% phase=18% :: CHKDSK online scan native says: Progress: 2272513 of 4485888 done; Stage: 50%; Total: 18%; ETA:   0:00:35
+[21:57:02] [INFO] #000068 overall=2% phase=18% :: CHKDSK online scan safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[21:57:03] [OUTPUT] #000069 overall=2% phase=21% :: CHKDSK online scan native says: Progress: 2771306 of 4485888 done; Stage: 61%; Total: 21%; ETA:   0:00:30 .
+[21:57:03] [OUTPUT] #000070 overall=2% phase=25% :: CHKDSK online scan native says: Progress: 3271272 of 4485888 done; Stage: 72%; Total: 25%; ETA:   0:00:25 ..
+[21:57:03] [INFO] #000071 overall=2% phase=25% :: CHKDSK online scan overall repair progress now 2% across all checks and repairs; suppressed duplicate native lines=0
+[21:57:04] [OUTPUT] #000072 overall=2% phase=29% :: CHKDSK online scan native says: Progress: 3816953 of 4485888 done; Stage: 85%; Total: 29%; ETA:   0:00:22 ...
+[21:57:04] [OUTPUT] #000073 overall=3% phase=33% :: CHKDSK online scan native says: Progress: 4366081 of 4485888 done; Stage: 97%; Total: 33%; ETA:   0:00:19
+[21:57:04] [OUTPUT] #000074 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4485888 of 4485888 done; Stage: 100%; Total: 34%; ETA:   0:00:19 .
+[21:57:04] [OUTPUT] #000075 overall=3% phase=34% :: CHKDSK online scan native says: 4485888 file records processed.
+[21:57:04] [OUTPUT] #000076 overall=3% phase=34% :: CHKDSK online scan native says: File verification completed.
+[21:57:04] [OUTPUT] #000077 overall=3% phase=34% :: CHKDSK online scan native says: Phase duration (File record verification): 9.53 seconds.
+[21:57:04] [INFO] #000078 overall=3% phase=34% :: CHKDSK online scan last native message: Phase duration (File record verification): 9.53 seconds.
+[21:57:05] [INFO] #000079 overall=3% phase=34% :: CHKDSK online scan overall repair progress now 3% across all checks and repairs; suppressed duplicate native lines=0
+[21:57:06] [OUTPUT] #000080 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 1 of 34796 done; Stage:  0%; Total:  7%; ETA:   0:00:26 ..
+[21:57:06] [OUTPUT] #000081 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 34796 of 34796 done; Stage: 100%; Total:  7%; ETA:   0:02:14 ...
+[21:57:06] [OUTPUT] #000082 overall=3% phase=34% :: CHKDSK online scan native says: 34796 large file records processed.
+[21:57:06] [OUTPUT] #000083 overall=3% phase=34% :: CHKDSK online scan native says: Phase duration (Orphan file record recovery): 12.64 milliseconds.
+[21:57:06] [OUTPUT] #000084 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 0 of 0 done; Stage: 99%; Total:  7%; ETA:   0:02:14
+[21:57:06] [OUTPUT] #000085 overall=3% phase=34% :: CHKDSK online scan native says: 0 bad file records processed.
+[21:57:06] [OUTPUT] #000086 overall=3% phase=34% :: CHKDSK online scan native says: Phase duration (Bad file record checking): 0.03 milliseconds.
+[21:57:06] [OUTPUT] #000087 overall=3% phase=34% :: CHKDSK online scan native says: Stage 2: Examining file name linkage ...
+[21:57:06] [OUTPUT] #000088 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 67167 of 4923908 done; Stage:  1%; Total:  7%; ETA:   0:02:16 .
+[21:57:07] [OUTPUT] #000089 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 195310 of 4923908 done; Stage:  3%; Total:  7%; ETA:   0:02:17 ..
+[21:57:07] [INFO] #000090 overall=3% phase=34% :: CHKDSK online scan evidence: stdout +1038B, stderr +0B, child CPU total 26.69s
+[21:57:08] [OUTPUT] #000091 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 332780 of 4923908 done; Stage:  6%; Total:  8%; ETA:   0:02:19 ...
+[21:57:08] [OUTPUT] #000092 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 470914 of 4923908 done; Stage:  9%; Total:  8%; ETA:   0:02:20
+[21:57:08] [INFO] #000093 overall=3% phase=34% :: CHKDSK online scan process map: chkdsk#31244 cpu=11.66s; sfc#20816 cpu=0.06s; TiWorker#33224 cpu=17.05s
+[21:57:09] [OUTPUT] #000094 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 608346 of 4923908 done; Stage: 12%; Total:  8%; ETA:   0:02:22 .
+[21:57:09] [OUTPUT] #000095 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 608347 of 4923908 done; Stage: 12%; Total:  8%; ETA:   0:02:22 ..
+[21:57:09] [OUTPUT] #000096 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 752024 of 4923908 done; Stage: 15%; Total:  8%; ETA:   0:02:22 ...
+[21:57:09] [OUTPUT] #000097 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 752025 of 4923908 done; Stage: 15%; Total:  8%; ETA:   0:02:22
+[21:57:09] [INFO] #000098 overall=3% phase=34% :: CHKDSK online scan evidence: stdout +308B, stderr +0B, child CPU total 30.84s
+[21:57:10] [OUTPUT] #000099 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 902365 of 4923908 done; Stage: 18%; Total:  9%; ETA:   0:02:24 .
+[21:57:10] [OUTPUT] #000100 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 1083834 of 4923908 done; Stage: 22%; Total:  9%; ETA:   0:02:23 ..
+[21:57:10] [INFO] #000101 overall=3% phase=34% :: CHKDSK online scan process map: chkdsk#31244 cpu=13.70s; sfc#20816 cpu=0.06s; TiWorker#33224 cpu=19.09s
+[21:57:11] [OUTPUT] #000102 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 1281996 of 4923908 done; Stage: 26%; Total:  9%; ETA:   0:02:23 ...
+[21:57:11] [OUTPUT] #000103 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 1549787 of 4923908 done; Stage: 31%; Total: 10%; ETA:   0:02:20
+[21:57:11] [OUTPUT] #000104 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 1549788 of 4923908 done; Stage: 31%; Total: 10%; ETA:   0:02:20 .
+[21:57:11] [INFO] #000105 overall=3% phase=34% :: CHKDSK online scan 34%: native percent when available, otherwise anti-stall timer; elapsed=00:00:19
+[21:57:12] [OUTPUT] #000106 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 2033282 of 4923908 done; Stage: 41%; Total: 10%; ETA:   0:02:14 ..
+[21:57:12] [OUTPUT] #000107 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 2594319 of 4923908 done; Stage: 52%; Total: 11%; ETA:   0:02:06 ...
+[21:57:12] [INFO] #000108 overall=3% phase=34% :: CHKDSK online scan safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[21:57:13] [OUTPUT] #000109 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 3181023 of 4923908 done; Stage: 64%; Total: 12%; ETA:   0:01:59
+[21:57:13] [OUTPUT] #000110 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 3859810 of 4923908 done; Stage: 78%; Total: 13%; ETA:   0:01:51 .
+[21:57:13] [INFO] #000111 overall=3% phase=34% :: CHKDSK online scan overall repair progress now 3% across all checks and repairs; suppressed duplicate native lines=0
+[21:57:14] [OUTPUT] #000112 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4478188 of 4923908 done; Stage: 90%; Total: 14%; ETA:   0:01:45 ..
+[21:57:14] [OUTPUT] #000113 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 73532 of 73532 done; Stage: 100%; Total: 14%; ETA:   0:01:45 ...
+[21:57:14] [OUTPUT] #000114 overall=3% phase=34% :: CHKDSK online scan native says: 73532 reparse records processed.
+[21:57:14] [OUTPUT] #000115 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4491744 of 4923908 done; Stage: 91%; Total: 14%; ETA:   0:01:47
+[21:57:14] [INFO] #000116 overall=3% phase=34% :: CHKDSK online scan safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[21:57:15] [OUTPUT] #000117 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4499975 of 4923908 done; Stage: 91%; Total: 14%; ETA:   0:01:48 .
+[21:57:15] [OUTPUT] #000118 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4509947 of 4923908 done; Stage: 91%; Total: 15%; ETA:   0:01:50 ..
+[21:57:15] [OUTPUT] #000119 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4520821 of 4923908 done; Stage: 91%; Total: 15%; ETA:   0:01:53 ...
+[21:57:15] [INFO] #000120 overall=3% phase=34% :: CHKDSK online scan watchdog: no silent hang allowed; timeout=7200s elapsed=23s idle=0s
+[21:57:16] [OUTPUT] #000121 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4530494 of 4923908 done; Stage: 92%; Total: 15%; ETA:   0:01:55
+[21:57:16] [OUTPUT] #000122 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4539775 of 4923908 done; Stage: 92%; Total: 15%; ETA:   0:01:56 .
+[21:57:16] [INFO] #000123 overall=3% phase=34% :: CHKDSK online scan live logs: CBS updated 0s ago, DISM updated 30s ago, movement=True
+[21:57:17] [OUTPUT] #000124 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4556968 of 4923908 done; Stage: 92%; Total: 15%; ETA:   0:01:58 ..
+[21:57:17] [OUTPUT] #000125 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4570797 of 4923908 done; Stage: 92%; Total: 15%; ETA:   0:02:00 ...
+[21:57:17] [INFO] #000126 overall=3% phase=34% :: CHKDSK online scan last native message: Progress: 4570797 of 4923908 done; Stage: 92%; Total: 15%; ETA:   0:02:00 ...
+[21:57:18] [OUTPUT] #000127 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4578609 of 4923908 done; Stage: 92%; Total: 15%; ETA:   0:02:01
+[21:57:18] [OUTPUT] #000128 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4585661 of 4923908 done; Stage: 93%; Total: 15%; ETA:   0:02:04 .
+[21:57:18] [INFO] #000129 overall=3% phase=34% :: CHKDSK online scan 34%: native percent when available, otherwise anti-stall timer; elapsed=00:00:26
+[21:57:19] [OUTPUT] #000130 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4591889 of 4923908 done; Stage: 93%; Total: 15%; ETA:   0:02:06 ..
+[21:57:19] [OUTPUT] #000131 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4600532 of 4923908 done; Stage: 93%; Total: 15%; ETA:   0:02:08 ...
+[21:57:19] [INFO] #000132 overall=3% phase=34% :: CHKDSK online scan safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[21:57:20] [OUTPUT] #000133 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4605105 of 4923908 done; Stage: 93%; Total: 15%; ETA:   0:02:11
+[21:57:20] [OUTPUT] #000134 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4614268 of 4923908 done; Stage: 93%; Total: 15%; ETA:   0:02:12 .
+[21:57:20] [INFO] #000135 overall=3% phase=34% :: CHKDSK online scan overall repair progress now 3% across all checks and repairs; suppressed duplicate native lines=0
+[21:57:21] [OUTPUT] #000136 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4633352 of 4923908 done; Stage: 94%; Total: 16%; ETA:   0:02:14 ..
+[21:57:21] [OUTPUT] #000137 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4644362 of 4923908 done; Stage: 94%; Total: 16%; ETA:   0:02:16 ...
+[21:57:21] [INFO] #000138 overall=3% phase=34% :: CHKDSK online scan evidence: stdout +156B, stderr +0B, child CPU total 51.44s
+[21:57:22] [OUTPUT] #000139 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4654108 of 4923908 done; Stage: 94%; Total: 16%; ETA:   0:02:19
+[21:57:22] [OUTPUT] #000140 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4663022 of 4923908 done; Stage: 94%; Total: 16%; ETA:   0:02:20 .
+[21:57:22] [INFO] #000141 overall=3% phase=34% :: CHKDSK online scan process map: chkdsk#31244 cpu=21.63s; sfc#20816 cpu=0.06s; TiWorker#33224 cpu=31.36s
+[21:57:23] [OUTPUT] #000142 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4671978 of 4923908 done; Stage: 94%; Total: 16%; ETA:   0:02:22 ..
+[21:57:23] [OUTPUT] #000143 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4682841 of 4923908 done; Stage: 95%; Total: 16%; ETA:   0:02:24 ...
+[21:57:23] [INFO] #000144 overall=3% phase=34% :: CHKDSK online scan watchdog: no silent hang allowed; timeout=7200s elapsed=32s idle=0s
+[21:57:24] [OUTPUT] #000145 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4923908 of 4923908 done; Stage: 100%; Total: 16%; ETA:   0:02:25
+[21:57:24] [OUTPUT] #000146 overall=3% phase=34% :: CHKDSK online scan native says: 4923908 index entries processed.
+[21:57:24] [OUTPUT] #000147 overall=3% phase=34% :: CHKDSK online scan native says: Index verification completed.
+[21:57:24] [OUTPUT] #000148 overall=3% phase=34% :: CHKDSK online scan native says: Phase duration (Index verification): 17.90 seconds.
+[21:57:24] [INFO] #000149 overall=3% phase=34% :: CHKDSK online scan process map: chkdsk#31244 cpu=23.20s; sfc#20816 cpu=0.06s; TiWorker#33224 cpu=33.45s
+[21:57:25] [INFO] #000150 overall=3% phase=34% :: CHKDSK online scan last native message: Phase duration (Index verification): 17.90 seconds.
+[21:57:26] [INFO] #000151 overall=3% phase=34% :: CHKDSK online scan overall repair progress now 3% across all checks and repairs; suppressed duplicate native lines=0
+[21:57:27] [INFO] #000152 overall=3% phase=34% :: CHKDSK online scan watchdog: no silent hang allowed; timeout=7200s elapsed=36s idle=0s
+[21:57:28] [INFO] #000153 overall=3% phase=34% :: CHKDSK online scan 34%: native percent when available, otherwise anti-stall timer; elapsed=00:00:36
+[21:57:29] [INFO] #000154 overall=3% phase=34% :: CHKDSK online scan evidence: stdout +0B, stderr +0B, child CPU total 66.64s
+[21:57:30] [INFO] #000155 overall=3% phase=34% :: CHKDSK online scan live logs: CBS updated 0s ago, DISM updated 44s ago, movement=True
+[21:57:31] [INFO] #000156 overall=3% phase=34% :: CHKDSK online scan safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[21:57:32] [INFO] #000157 overall=3% phase=34% :: CHKDSK online scan process map: chkdsk#31244 cpu=31.34s; sfc#20816 cpu=0.06s; TiWorker#33224 cpu=41.14s
+[21:57:33] [INFO] #000158 overall=3% phase=34% :: CHKDSK online scan last native message: Phase duration (Index verification): 17.90 seconds.
+[21:57:34] [INFO] #000159 overall=3% phase=34% :: CHKDSK online scan overall repair progress now 3% across all checks and repairs; suppressed duplicate native lines=0
+[21:57:35] [INFO] #000160 overall=3% phase=34% :: CHKDSK online scan watchdog: no silent hang allowed; timeout=7200s elapsed=44s idle=0s
+[21:57:36] [INFO] #000161 overall=3% phase=34% :: CHKDSK online scan 34%: native percent when available, otherwise anti-stall timer; elapsed=00:00:45
+[21:57:38] [INFO] #000162 overall=3% phase=34% :: CHKDSK online scan evidence: stdout +0B, stderr +0B, child CPU total 82.53s
+[21:57:39] [INFO] #000163 overall=3% phase=34% :: CHKDSK online scan live logs: CBS updated 0s ago, DISM updated 53s ago, movement=True
+[21:57:40] [INFO] #000164 overall=3% phase=34% :: CHKDSK online scan safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[21:57:41] [OUTPUT] #000165 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 1 of 0 done; Stage: 99%; Total: 16%; ETA:   0:02:31 .
+[21:57:41] [OUTPUT] #000166 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 0 of 0 done; Stage: 99%; Total: 16%; ETA:   0:02:36 ..
+[21:57:41] [OUTPUT] #000167 overall=3% phase=34% :: CHKDSK online scan native says: 0 unindexed files scanned.
+[21:57:41] [OUTPUT] #000168 overall=3% phase=34% :: CHKDSK online scan native says: Phase duration (Orphan reconnection): 17.18 seconds.
+[21:57:41] [OUTPUT] #000169 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 0 of 0 done; Stage: 99%; Total: 16%; ETA:   0:02:40 ...
+[21:57:41] [OUTPUT] #000170 overall=3% phase=34% :: CHKDSK online scan native says: 0 unindexed files recovered to lost and found.
+[21:57:41] [OUTPUT] #000171 overall=3% phase=34% :: CHKDSK online scan native says: Phase duration (Orphan recovery to lost and found): 0.13 milliseconds.
+[21:57:41] [OUTPUT] #000172 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 73532 of 73532 done; Stage: 100%; Total: 16%; ETA:   0:02:49
+[21:57:41] [OUTPUT] #000173 overall=3% phase=34% :: CHKDSK online scan native says: 73532 reparse records processed.
+[21:57:41] [OUTPUT] #000174 overall=3% phase=34% :: CHKDSK online scan native says: Phase duration (Reparse point and Object ID verification): 134.41 milliseconds.
+[21:57:41] [OUTPUT] #000175 overall=3% phase=34% :: CHKDSK online scan native says: Stage 3: Examining security descriptors ...
+[21:57:41] [OUTPUT] #000176 overall=3% phase=34% :: CHKDSK online scan native says: Security descriptor verification completed.
+[21:57:41] [OUTPUT] #000177 overall=3% phase=34% :: CHKDSK online scan native says: Phase duration (Security descriptor verification): 40.15 milliseconds.
+[21:57:41] [OUTPUT] #000178 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 26 of 26 done; Stage: 100%; Total: 17%; ETA:   0:02:52 .
+[21:57:41] [OUTPUT] #000179 overall=3% phase=34% :: CHKDSK online scan native says: 219011 data files processed.
+[21:57:41] [OUTPUT] #000180 overall=3% phase=34% :: CHKDSK online scan native says: Phase duration (Data attribute verification): 0.15 milliseconds.
+[21:57:41] [OUTPUT] #000181 overall=3% phase=34% :: CHKDSK online scan native says: CHKDSK is verifying Usn Journal...
+[21:57:41] [INFO] #000182 overall=3% phase=34% :: CHKDSK online scan last native message: CHKDSK is verifying Usn Journal...
+[21:57:42] [OUTPUT] #000183 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 1716 of 4198 done; Stage: 40%; Total: 17%; ETA:   0:03:34 ..
+[21:57:42] [OUTPUT] #000184 overall=3% phase=34% :: CHKDSK online scan native says: Progress: 4198 of 4198 done; Stage: 100%; Total: 17%; ETA:   0:03:34 ...
+[21:57:42] [OUTPUT] #000185 overall=3% phase=34% :: CHKDSK online scan native says: 34391808 USN bytes processed.
+[21:57:42] [OUTPUT] #000186 overall=3% phase=34% :: CHKDSK online scan native says: Usn Journal verification completed.
+[21:57:42] [OUTPUT] #000187 overall=3% phase=34% :: CHKDSK online scan native says: Phase duration (USN journal verification): 82.96 milliseconds.
+[21:57:42] [OUTPUT] #000188 overall=3% phase=34% :: CHKDSK online scan native says: Windows has scanned the file system and found no problems.
+[21:57:42] [OUTPUT] #000189 overall=3% phase=34% :: CHKDSK online scan native says: No further action is required.
+[21:57:42] [OUTPUT] #000190 overall=3% phase=34% :: CHKDSK online scan native says: 1951064063 KB total disk space.
+[21:57:42] [OUTPUT] #000191 overall=3% phase=34% :: CHKDSK online scan native says: 153493588 KB in 1013127 files.
+[21:57:42] [OUTPUT] #000192 overall=3% phase=34% :: CHKDSK online scan native says: 449544 KB in 219012 indexes.
+[21:57:42] [OUTPUT] #000193 overall=3% phase=34% :: CHKDSK online scan native says: 0 KB in bad sectors.
+[21:57:42] [OUTPUT] #000194 overall=3% phase=34% :: CHKDSK online scan native says: 4662375 KB in use by the system.
+[21:57:42] [OUTPUT] #000195 overall=3% phase=34% :: CHKDSK online scan native says: 65536 KB occupied by the log file.
+[21:57:47] [OUTPUT] #000196 overall=3% phase=34% :: CHKDSK online scan native says: 1792458556 KB available on disk.
+[21:58:41] [OUTPUT] #000197 overall=3% phase=34% :: CHKDSK online scan native says: 4096 bytes in each allocation unit.
+[21:58:41] [OUTPUT] #000198 overall=3% phase=34% :: CHKDSK online scan native says: 487766015 total allocation units on disk.
+[21:58:41] [OUTPUT] #000199 overall=3% phase=34% :: CHKDSK online scan native says: 448114639 allocation units available on disk.
+[21:58:41] [OUTPUT] #000200 overall=3% phase=34% :: CHKDSK online scan native says: Total duration: 44.89 seconds (44897 ms).
+[21:58:41] [INFO] #000201 overall=5% phase=61% :: CHKDSK online scan 61%: native percent when available, otherwise anti-stall timer; elapsed=00:01:49
+[21:58:41] [INFO] #000202 overall=8% phase=100% :: phase-end: CHKDSK online scan; exit=0
+[21:58:42] [INFO] #000203 overall=8% phase=0% :: phase-start: DISM ScanHealth; command=C:\Windows\System32\dism.exe /Online /Cleanup-Image /ScanHealth
+[21:58:43] [OUTPUT] #000204 overall=8% phase=0% :: DISM ScanHealth native says: Deployment Image Servicing and Management tool
+[21:58:43] [OUTPUT] #000205 overall=8% phase=0% :: DISM ScanHealth native says: Version: 10.0.26100.5074
+[21:58:44] [INFO] #000206 overall=8% phase=1% :: DISM ScanHealth last native message: Version: 10.0.26100.5074
+[21:58:45] [INFO] #000207 overall=8% phase=1% :: DISM ScanHealth overall repair progress now 8% across all checks and repairs; suppressed duplicate native lines=0
+[21:58:46] [INFO] #000208 overall=8% phase=2% :: DISM ScanHealth watchdog: no silent hang allowed; timeout=7200s elapsed=3s idle=2s
+[21:58:47] [INFO] #000209 overall=8% phase=2% :: DISM ScanHealth 2%: native percent when available, otherwise anti-stall timer; elapsed=00:00:04
+[21:59:46] [OUTPUT] #000210 overall=8% phase=2% :: DISM ScanHealth native says: Image Version: 10.0.26200.8246
+[21:59:46] [INFO] #000211 overall=11% phase=36% :: DISM ScanHealth live logs: CBS updated 0s ago, DISM updated 1s ago, movement=True
+[21:59:47] [INFO] #000212 overall=11% phase=36% :: DISM ScanHealth safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[21:59:48] [INFO] #000213 overall=11% phase=37% :: DISM ScanHealth process map: Dism#21936 cpu=0.08s; DismHost#15048 cpu=0.03s
+[21:59:49] [INFO] #000214 overall=11% phase=37% :: DISM ScanHealth last native message: Image Version: 10.0.26200.8246
+[21:59:50] [INFO] #000215 overall=12% phase=38% :: DISM ScanHealth overall repair progress now 12% across all checks and repairs; suppressed duplicate native lines=0
+[21:59:51] [INFO] #000216 overall=12% phase=38% :: DISM ScanHealth watchdog: no silent hang allowed; timeout=7200s elapsed=69s idle=0s
+[21:59:53] [INFO] #000217 overall=12% phase=39% :: DISM ScanHealth 39%: native percent when available, otherwise anti-stall timer; elapsed=00:01:10
+[21:59:54] [INFO] #000218 overall=12% phase=39% :: DISM ScanHealth evidence: stdout +0B, stderr +0B, child CPU total 0.11s
+[21:59:55] [INFO] #000219 overall=12% phase=40% :: DISM ScanHealth live logs: CBS updated 0s ago, DISM updated 10s ago, movement=True
+[21:59:56] [INFO] #000220 overall=12% phase=41% :: DISM ScanHealth safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[21:59:57] [INFO] #000221 overall=12% phase=41% :: DISM ScanHealth process map: Dism#21936 cpu=0.08s; DismHost#15048 cpu=0.03s
+[21:59:58] [INFO] #000222 overall=12% phase=42% :: DISM ScanHealth last native message: Image Version: 10.0.26200.8246
+[21:59:59] [INFO] #000223 overall=12% phase=43% :: DISM ScanHealth overall repair progress now 12% across all checks and repairs; suppressed duplicate native lines=0
+[22:00:00] [INFO] #000224 overall=12% phase=43% :: DISM ScanHealth watchdog: no silent hang allowed; timeout=7200s elapsed=78s idle=0s
+[22:00:01] [INFO] #000225 overall=12% phase=44% :: DISM ScanHealth 44%: native percent when available, otherwise anti-stall timer; elapsed=00:01:18
+[22:00:02] [INFO] #000226 overall=12% phase=44% :: DISM ScanHealth evidence: stdout +0B, stderr +0B, child CPU total 0.11s
+[22:00:03] [INFO] #000227 overall=12% phase=45% :: DISM ScanHealth live logs: CBS updated 0s ago, DISM updated 18s ago, movement=True
+[22:00:04] [INFO] #000228 overall=12% phase=46% :: DISM ScanHealth safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[22:00:06] [INFO] #000229 overall=12% phase=46% :: DISM ScanHealth process map: Dism#21936 cpu=0.08s; DismHost#15048 cpu=0.03s
+[22:00:07] [INFO] #000230 overall=12% phase=47% :: DISM ScanHealth last native message: Image Version: 10.0.26200.8246
+[22:00:08] [INFO] #000231 overall=12% phase=47% :: DISM ScanHealth overall repair progress now 12% across all checks and repairs; suppressed duplicate native lines=0
+[22:00:09] [INFO] #000232 overall=12% phase=48% :: DISM ScanHealth watchdog: no silent hang allowed; timeout=7200s elapsed=87s idle=0s
+[22:00:10] [INFO] #000233 overall=12% phase=49% :: DISM ScanHealth 49%: native percent when available, otherwise anti-stall timer; elapsed=00:01:27
+[22:00:11] [INFO] #000234 overall=12% phase=49% :: DISM ScanHealth evidence: stdout +0B, stderr +0B, child CPU total 0.11s
+[22:00:12] [INFO] #000235 overall=12% phase=50% :: DISM ScanHealth live logs: CBS updated 0s ago, DISM updated 27s ago, movement=True
+[22:00:13] [INFO] #000236 overall=13% phase=51% :: DISM ScanHealth safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[22:00:14] [INFO] #000237 overall=13% phase=51% :: DISM ScanHealth process map: Dism#21936 cpu=0.08s; DismHost#15048 cpu=0.03s
+[22:00:15] [INFO] #000238 overall=13% phase=52% :: DISM ScanHealth last native message: Image Version: 10.0.26200.8246
+[22:00:16] [INFO] #000239 overall=13% phase=52% :: DISM ScanHealth overall repair progress now 13% across all checks and repairs; suppressed duplicate native lines=0
+[22:00:18] [INFO] #000240 overall=13% phase=53% :: DISM ScanHealth watchdog: no silent hang allowed; timeout=7200s elapsed=95s idle=0s
+[22:00:19] [INFO] #000241 overall=13% phase=53% :: DISM ScanHealth 53%: native percent when available, otherwise anti-stall timer; elapsed=00:01:36
+[22:00:20] [INFO] #000242 overall=13% phase=54% :: DISM ScanHealth evidence: stdout +0B, stderr +0B, child CPU total 0.11s
+[22:00:21] [INFO] #000243 overall=13% phase=54% :: DISM ScanHealth live logs: CBS updated 0s ago, DISM updated 36s ago, movement=True
+[22:00:22] [INFO] #000244 overall=13% phase=55% :: DISM ScanHealth safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[22:00:23] [INFO] #000245 overall=13% phase=56% :: DISM ScanHealth process map: Dism#21936 cpu=0.08s; DismHost#15048 cpu=0.03s
+[22:00:24] [INFO] #000246 overall=13% phase=56% :: DISM ScanHealth last native message: Image Version: 10.0.26200.8246
+[22:00:25] [INFO] #000247 overall=13% phase=57% :: DISM ScanHealth overall repair progress now 13% across all checks and repairs; suppressed duplicate native lines=0
+[22:00:26] [INFO] #000248 overall=13% phase=58% :: DISM ScanHealth watchdog: no silent hang allowed; timeout=7200s elapsed=104s idle=0s
+[22:00:27] [INFO] #000249 overall=13% phase=58% :: DISM ScanHealth 58%: native percent when available, otherwise anti-stall timer; elapsed=00:01:44
+[22:00:28] [INFO] #000250 overall=13% phase=59% :: DISM ScanHealth evidence: stdout +0B, stderr +0B, child CPU total 0.11s
+[22:00:31] [INFO] #000251 overall=13% phase=60% :: DISM ScanHealth live logs: CBS updated 0s ago, DISM updated 6s ago, movement=True
+[22:00:32] [INFO] #000252 overall=13% phase=61% :: DISM ScanHealth safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[22:00:33] [OUTPUT] #000253 overall=13% phase=61% :: DISM ScanHealth native says: [==                         4.9%                           ]
+[22:00:33] [INFO] #000254 overall=14% phase=62% :: DISM ScanHealth last native message: [==                         4.9%                           ]
+[22:00:34] [OUTPUT] #000255 overall=14% phase=62% :: DISM ScanHealth native says: [===                        5.9%                           ]
+[22:00:34] [OUTPUT] #000256 overall=14% phase=62% :: DISM ScanHealth native says: [===                        6.8%                           ]
+[22:00:35] [INFO] #000257 overall=14% phase=62% :: DISM ScanHealth 62%: native percent when available, otherwise anti-stall timer; elapsed=00:01:52
+[22:00:36] [OUTPUT] #000258 overall=14% phase=62% :: DISM ScanHealth native says: [====                       7.4%                           ]
+[22:00:36] [INFO] #000259 overall=14% phase=63% :: DISM ScanHealth live logs: CBS updated 3s ago, DISM updated 11s ago, movement=True
+[22:00:37] [OUTPUT] #000260 overall=14% phase=63% :: DISM ScanHealth native says: [====                       8.4%                           ]
+[22:00:37] [OUTPUT] #000261 overall=14% phase=63% :: DISM ScanHealth native says: [=====                      9.4%                           ]
+[22:00:37] [INFO] #000262 overall=14% phase=63% :: DISM ScanHealth last native message: [=====                      9.4%                           ]
+[22:00:40] [OUTPUT] #000263 overall=14% phase=63% :: DISM ScanHealth native says: [=====                      10.3%                          ]
+[22:00:40] [INFO] #000264 overall=14% phase=66% :: DISM ScanHealth watchdog: no silent hang allowed; timeout=7200s elapsed=118s idle=0s
+[22:01:04] [OUTPUT] #000265 overall=14% phase=66% :: DISM ScanHealth native says: [======                     11.1%                          ]
+[22:01:04] [OUTPUT] #000266 overall=14% phase=66% :: DISM ScanHealth native says: [======                     11.5%                          ]
+[22:01:04] [OUTPUT] #000267 overall=14% phase=66% :: DISM ScanHealth native says: [=======                    12.5%                          ]
+[22:01:04] [OUTPUT] #000268 overall=14% phase=66% :: DISM ScanHealth native says: [=======                    13.5%                          ]
+[22:01:04] [INFO] #000269 overall=15% phase=79% :: DISM ScanHealth process map: Dism#21936 cpu=0.08s; DismHost#15048 cpu=0.03s
+[22:01:05] [OUTPUT] #000270 overall=15% phase=79% :: DISM ScanHealth native says: [========                   14.2%                          ]
+[22:01:05] [OUTPUT] #000271 overall=15% phase=79% :: DISM ScanHealth native says: [========                   15.2%                          ]
+[22:01:05] [OUTPUT] #000272 overall=15% phase=79% :: DISM ScanHealth native says: [=========                  16.2%                          ]
+[22:01:05] [OUTPUT] #000273 overall=15% phase=79% :: DISM ScanHealth native says: [=========                  17.2%                          ]
+[22:01:05] [OUTPUT] #000274 overall=15% phase=79% :: DISM ScanHealth native says: [==========                 18.1%                          ]
+[22:01:05] [INFO] #000275 overall=15% phase=79% :: DISM ScanHealth native duplicate suppression: skipped 1 repeated copies of '[==========                 18.1%                          ]' before new output arrived
+[22:01:05] [OUTPUT] #000276 overall=15% phase=79% :: DISM ScanHealth native says: [==========                 18.8%                          ]
+[22:01:05] [OUTPUT] #000277 overall=15% phase=79% :: DISM ScanHealth native says: [==========                 18.9%                          ]
+[22:01:05] [OUTPUT] #000278 overall=15% phase=79% :: DISM ScanHealth native says: [===========                19.1%                          ]
+[22:01:05] [OUTPUT] #000279 overall=15% phase=79% :: DISM ScanHealth native says: [===========                19.3%                          ]
+[22:01:05] [INFO] #000280 overall=15% phase=79% :: DISM ScanHealth native duplicate suppression: skipped 1 repeated copies of '[===========                19.3%                          ]' before new output arrived
+[22:01:05] [OUTPUT] #000281 overall=15% phase=79% :: DISM ScanHealth native says: [===========                19.4%                          ]
+[22:01:05] [OUTPUT] #000282 overall=15% phase=79% :: DISM ScanHealth native says: [===========                19.6%                          ]
+[22:01:05] [OUTPUT] #000283 overall=15% phase=79% :: DISM ScanHealth native says: [===========                20.2%                          ]
+[22:01:05] [OUTPUT] #000284 overall=15% phase=79% :: DISM ScanHealth native says: [===========                20.3%                          ]
+[22:01:05] [OUTPUT] #000285 overall=15% phase=79% :: DISM ScanHealth native says: [============               20.8%                          ]
+[22:01:05] [OUTPUT] #000286 overall=15% phase=79% :: DISM ScanHealth native says: [============               21.0%                          ]
+[22:01:05] [OUTPUT] #000287 overall=15% phase=79% :: DISM ScanHealth native says: [============               21.1%                          ]
+[22:01:05] [OUTPUT] #000288 overall=15% phase=79% :: DISM ScanHealth native says: [============               22.0%                          ]
+[22:01:05] [OUTPUT] #000289 overall=15% phase=79% :: DISM ScanHealth native says: [=============              23.0%                          ]
+[22:01:05] [OUTPUT] #000290 overall=15% phase=79% :: DISM ScanHealth native says: [=============              24.0%                          ]
+[22:01:05] [OUTPUT] #000291 overall=15% phase=79% :: DISM ScanHealth native says: [==============             25.0%                          ]
+[22:01:05] [OUTPUT] #000292 overall=15% phase=79% :: DISM ScanHealth native says: [===============            26.0%                          ]
+[22:01:05] [INFO] #000293 overall=15% phase=79% :: DISM ScanHealth process map: Dism#21936 cpu=0.08s; DismHost#15048 cpu=0.03s
+[22:01:07] [OUTPUT] #000294 overall=15% phase=79% :: DISM ScanHealth native says: [===============            26.9%                          ]
+[22:01:07] [OUTPUT] #000295 overall=15% phase=79% :: DISM ScanHealth native says: [================           27.7%                          ]
+[22:01:07] [INFO] #000296 overall=15% phase=80% :: DISM ScanHealth watchdog: no silent hang allowed; timeout=7200s elapsed=144s idle=0s
+[22:01:08] [OUTPUT] #000297 overall=15% phase=80% :: DISM ScanHealth native says: [================           28.7%                          ]
+[22:01:08] [INFO] #000298 overall=15% phase=81% :: DISM ScanHealth evidence: stdout +64B, stderr +0B, child CPU total 0.11s
+[22:01:09] [OUTPUT] #000299 overall=15% phase=81% :: DISM ScanHealth native says: [=================          29.7%                          ]
+[22:01:09] [INFO] #000300 overall=15% phase=81% :: DISM ScanHealth safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[22:01:10] [OUTPUT] #000301 overall=15% phase=81% :: DISM ScanHealth native says: [=================          30.6%                          ]
+[22:01:10] [OUTPUT] #000302 overall=15% phase=81% :: DISM ScanHealth native says: [==================         31.6%                          ]
+[22:01:10] [OUTPUT] #000303 overall=15% phase=81% :: DISM ScanHealth native says: [==================         32.6%                          ]
+[22:01:10] [OUTPUT] #000304 overall=15% phase=81% :: DISM ScanHealth native says: [===================        33.6%                          ]
+[22:01:10] [OUTPUT] #000305 overall=15% phase=81% :: DISM ScanHealth native says: [====================       34.5%                          ]
+[22:01:10] [INFO] #000306 overall=15% phase=82% :: DISM ScanHealth evidence: stdout +320B, stderr +0B, child CPU total 0.11s
+[22:01:11] [OUTPUT] #000307 overall=15% phase=82% :: DISM ScanHealth native says: [====================       35.5%                          ]
+[22:01:11] [OUTPUT] #000308 overall=15% phase=82% :: DISM ScanHealth native says: [=====================      36.5%                          ]
+[22:01:11] [OUTPUT] #000309 overall=15% phase=82% :: DISM ScanHealth native says: [=====================      37.5%                          ]
+[22:01:11] [OUTPUT] #000310 overall=15% phase=82% :: DISM ScanHealth native says: [======================     38.4%                          ]
+[22:01:11] [OUTPUT] #000311 overall=15% phase=82% :: DISM ScanHealth native says: [======================     39.4%                          ]
+[22:01:11] [INFO] #000312 overall=15% phase=82% :: DISM ScanHealth watchdog: no silent hang allowed; timeout=7200s elapsed=148s idle=0s
+[22:01:12] [OUTPUT] #000313 overall=15% phase=82% :: DISM ScanHealth native says: [=======================    40.4%                          ]
+[22:01:12] [OUTPUT] #000314 overall=15% phase=82% :: DISM ScanHealth native says: [=======================    41.4%                          ]
+[22:01:12] [OUTPUT] #000315 overall=15% phase=82% :: DISM ScanHealth native says: [========================   42.3%                          ]
+[22:01:12] [INFO] #000316 overall=15% phase=83% :: DISM ScanHealth safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[22:01:13] [INFO] #000317 overall=15% phase=83% :: DISM ScanHealth process map: Dism#21936 cpu=0.08s; DismHost#15048 cpu=0.03s
+[22:01:14] [INFO] #000318 overall=15% phase=83% :: DISM ScanHealth native duplicate suppression: skipped 1 repeated copies of '[========================   42.3%                          ]' before new output arrived
+[22:01:14] [OUTPUT] #000319 overall=15% phase=83% :: DISM ScanHealth native says: [=========================  43.3%                          ]
+[22:01:14] [OUTPUT] #000320 overall=15% phase=83% :: DISM ScanHealth native says: [=========================  44.3%                          ]
+[22:01:14] [INFO] #000321 overall=15% phase=84% :: DISM ScanHealth 84%: native percent when available, otherwise anti-stall timer; elapsed=00:02:31
+[22:01:15] [OUTPUT] #000322 overall=15% phase=84% :: DISM ScanHealth native says: [========================== 45.3%                          ]
+[22:01:15] [OUTPUT] #000323 overall=15% phase=84% :: DISM ScanHealth native says: [========================== 46.2%                          ]
+[22:01:15] [INFO] #000324 overall=15% phase=85% :: DISM ScanHealth safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[22:01:16] [OUTPUT] #000325 overall=15% phase=85% :: DISM ScanHealth native says: [===========================47.2%                          ]
+[22:01:16] [INFO] #000326 overall=16% phase=86% :: DISM ScanHealth last native message: [===========================47.2%                          ]
+[22:01:17] [INFO] #000327 overall=16% phase=86% :: DISM ScanHealth overall repair progress now 16% across all checks and repairs; suppressed duplicate native lines=0
+[22:01:18] [OUTPUT] #000328 overall=16% phase=86% :: DISM ScanHealth native says: [===========================47.5%                          ]
+[22:01:18] [INFO] #000329 overall=16% phase=87% :: DISM ScanHealth 87%: native percent when available, otherwise anti-stall timer; elapsed=00:02:35
+[22:01:20] [OUTPUT] #000330 overall=16% phase=87% :: DISM ScanHealth native says: [===========================47.6%                          ]
+[22:01:20] [INFO] #000331 overall=16% phase=87% :: DISM ScanHealth live logs: CBS updated 47s ago, DISM updated 55s ago, movement=True
+[22:01:21] [OUTPUT] #000332 overall=16% phase=87% :: DISM ScanHealth native says: [===========================47.7%                          ]
+[22:01:21] [OUTPUT] #000333 overall=16% phase=87% :: DISM ScanHealth native says: [===========================48.7%                          ]
+[22:01:21] [OUTPUT] #000334 overall=16% phase=87% :: DISM ScanHealth native says: [===========================49.7%                          ]
+[22:01:21] [OUTPUT] #000335 overall=16% phase=87% :: DISM ScanHealth native says: [===========================50.6%                          ]
+[22:01:21] [OUTPUT] #000336 overall=16% phase=87% :: DISM ScanHealth native says: [===========================51.6%                          ]
+[22:01:21] [INFO] #000337 overall=16% phase=88% :: DISM ScanHealth 88%: native percent when available, otherwise anti-stall timer; elapsed=00:02:38
+[22:01:22] [OUTPUT] #000338 overall=16% phase=88% :: DISM ScanHealth native says: [===========================52.6%                          ]
+[22:01:22] [OUTPUT] #000339 overall=16% phase=88% :: DISM ScanHealth native says: [===========================53.6%                          ]
+[22:01:22] [INFO] #000340 overall=16% phase=88% :: DISM ScanHealth safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[22:01:23] [INFO] #000341 overall=16% phase=89% :: DISM ScanHealth process map: Dism#21936 cpu=0.08s; DismHost#15048 cpu=0.03s
+[22:01:24] [OUTPUT] #000342 overall=16% phase=89% :: DISM ScanHealth native says: [===========================54.2%                          ]
+[22:01:24] [INFO] #000343 overall=16% phase=90% :: DISM ScanHealth overall repair progress now 16% across all checks and repairs; suppressed duplicate native lines=0
+[22:01:25] [OUTPUT] #000344 overall=16% phase=90% :: DISM ScanHealth native says: [===========================55.0%                          ]
+[22:01:25] [INFO] #000345 overall=16% phase=91% :: DISM ScanHealth 91%: native percent when available, otherwise anti-stall timer; elapsed=00:02:42
+[22:01:26] [INFO] #000346 overall=16% phase=91% :: DISM ScanHealth evidence: stdout +0B, stderr +0B, child CPU total 0.11s
+[22:01:27] [OUTPUT] #000347 overall=16% phase=91% :: DISM ScanHealth native says: [===========================55.4%                          ]
+[22:01:27] [INFO] #000348 overall=16% phase=92% :: DISM ScanHealth safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[22:01:28] [OUTPUT] #000349 overall=16% phase=92% :: DISM ScanHealth native says: [===========================56.4%                          ]
+[22:01:28] [INFO] #000350 overall=16% phase=92% :: DISM ScanHealth last native message: [===========================56.4%                          ]
+[22:01:29] [OUTPUT] #000351 overall=16% phase=92% :: DISM ScanHealth native says: [===========================56.7%                          ]
+[22:01:29] [INFO] #000352 overall=16% phase=93% :: DISM ScanHealth watchdog: no silent hang allowed; timeout=7200s elapsed=167s idle=0s
+[22:01:30] [OUTPUT] #000353 overall=16% phase=93% :: DISM ScanHealth native says: [===========================57.7%=                         ]
+[22:01:30] [INFO] #000354 overall=16% phase=93% :: DISM ScanHealth evidence: stdout +64B, stderr +0B, child CPU total 0.11s
+[22:01:32] [OUTPUT] #000355 overall=16% phase=93% :: DISM ScanHealth native says: [===========================57.9%=                         ]
+[22:01:32] [INFO] #000356 overall=16% phase=94% :: DISM ScanHealth safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[22:01:33] [OUTPUT] #000357 overall=16% phase=94% :: DISM ScanHealth native says: [===========================58.8%==                        ]
+[22:01:33] [OUTPUT] #000358 overall=16% phase=94% :: DISM ScanHealth native says: [===========================59.8%==                        ]
+[22:01:33] [INFO] #000359 overall=16% phase=94% :: DISM ScanHealth overall repair progress now 16% across all checks and repairs; suppressed duplicate native lines=0
+[22:01:34] [OUTPUT] #000360 overall=16% phase=94% :: DISM ScanHealth native says: [===========================60.8%===                       ]
+[22:01:34] [OUTPUT] #000361 overall=16% phase=94% :: DISM ScanHealth native says: [===========================61.8%===                       ]
+[22:01:34] [OUTPUT] #000362 overall=16% phase=94% :: DISM ScanHealth native says: [===========================62.7%====                      ]
+[22:01:34] [INFO] #000363 overall=16% phase=95% :: DISM ScanHealth live logs: CBS updated 1s ago, DISM updated 69s ago, movement=True
+[22:01:35] [OUTPUT] #000364 overall=16% phase=95% :: DISM ScanHealth native says: [===========================63.7%====                      ]
+[22:01:35] [INFO] #000365 overall=16% phase=95% :: DISM ScanHealth process map: Dism#21936 cpu=0.08s; DismHost#15048 cpu=0.03s
+[22:01:36] [OUTPUT] #000366 overall=16% phase=95% :: DISM ScanHealth native says: [===========================64.5%=====                     ]
+[22:01:36] [INFO] #000367 overall=16% phase=95% :: DISM ScanHealth overall repair progress now 16% across all checks and repairs; suppressed duplicate native lines=0
+[22:01:37] [OUTPUT] #000368 overall=16% phase=95% :: DISM ScanHealth native says: [===========================65.2%=====                     ]
+[22:01:37] [INFO] #000369 overall=16% phase=95% :: DISM ScanHealth 95%: native percent when available, otherwise anti-stall timer; elapsed=00:02:54
+[22:01:38] [OUTPUT] #000370 overall=16% phase=95% :: DISM ScanHealth native says: [===========================66.1%======                    ]
+[22:01:38] [OUTPUT] #000371 overall=16% phase=95% :: DISM ScanHealth native says: [===========================67.1%======                    ]
+[22:01:38] [INFO] #000372 overall=16% phase=95% :: DISM ScanHealth safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[22:01:39] [OUTPUT] #000373 overall=16% phase=95% :: DISM ScanHealth native says: [===========================68.1%=======                   ]
+[22:01:39] [INFO] #000374 overall=16% phase=95% :: DISM ScanHealth last native message: [===========================68.1%=======                   ]
+[22:01:40] [OUTPUT] #000375 overall=16% phase=95% :: DISM ScanHealth native says: [===========================69.1%========                  ]
+[22:01:40] [OUTPUT] #000376 overall=16% phase=95% :: DISM ScanHealth native says: [===========================70.0%========                  ]
+[22:01:40] [OUTPUT] #000377 overall=16% phase=95% :: DISM ScanHealth native says: [===========================71.0%=========                 ]
+[22:01:40] [OUTPUT] #000378 overall=16% phase=95% :: DISM ScanHealth native says: [===========================72.0%=========                 ]
+[22:01:40] [INFO] #000379 overall=16% phase=95% :: DISM ScanHealth live logs: CBS updated 8s ago, DISM updated 75s ago, movement=True
+[22:01:41] [OUTPUT] #000380 overall=16% phase=95% :: DISM ScanHealth native says: [===========================73.0%==========                ]
+[22:01:41] [OUTPUT] #000381 overall=16% phase=95% :: DISM ScanHealth native says: [===========================74.0%==========                ]
+[22:01:41] [OUTPUT] #000382 overall=16% phase=95% :: DISM ScanHealth native says: [===========================74.9%===========               ]
+[22:01:41] [OUTPUT] #000383 overall=16% phase=95% :: DISM ScanHealth native says: [===========================75.9%============              ]
+[22:01:41] [INFO] #000384 overall=16% phase=95% :: DISM ScanHealth watchdog: no silent hang allowed; timeout=7200s elapsed=179s idle=0s
+[22:01:42] [OUTPUT] #000385 overall=16% phase=95% :: DISM ScanHealth native says: [===========================76.9%============              ]
+[22:01:42] [OUTPUT] #000386 overall=16% phase=95% :: DISM ScanHealth native says: [===========================77.9%=============             ]
+[22:01:42] [OUTPUT] #000387 overall=16% phase=95% :: DISM ScanHealth native says: [===========================78.8%=============             ]
+[22:01:42] [OUTPUT] #000388 overall=16% phase=95% :: DISM ScanHealth native says: [===========================79.8%==============            ]
+[22:01:42] [OUTPUT] #000389 overall=16% phase=95% :: DISM ScanHealth native says: [===========================80.8%==============            ]
+[22:01:42] [OUTPUT] #000390 overall=16% phase=95% :: DISM ScanHealth native says: [===========================81.8%===============           ]
+[22:01:42] [OUTPUT] #000391 overall=16% phase=95% :: DISM ScanHealth native says: [===========================82.7%===============           ]
+[22:01:42] [INFO] #000392 overall=16% phase=95% :: DISM ScanHealth watchdog: no silent hang allowed; timeout=7200s elapsed=180s idle=0s
+[22:01:43] [OUTPUT] #000393 overall=16% phase=95% :: DISM ScanHealth native says: [===========================83.7%================          ]
+[22:01:43] [OUTPUT] #000394 overall=16% phase=95% :: DISM ScanHealth native says: [===========================84.7%=================         ]
+[22:01:43] [OUTPUT] #000395 overall=16% phase=95% :: DISM ScanHealth native says: [===========================85.7%=================         ]
+[22:01:43] [INFO] #000396 overall=16% phase=95% :: DISM ScanHealth safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[22:01:44] [OUTPUT] #000397 overall=16% phase=95% :: DISM ScanHealth native says: [===========================86.2%==================        ]
+[22:01:44] [INFO] #000398 overall=16% phase=95% :: DISM ScanHealth last native message: [===========================86.2%==================        ]
+[22:01:45] [OUTPUT] #000399 overall=16% phase=95% :: DISM ScanHealth native says: [===========================86.3%==================        ]
+[22:01:45] [INFO] #000400 overall=16% phase=95% :: DISM ScanHealth watchdog: no silent hang allowed; timeout=7200s elapsed=183s idle=0s
+[22:01:46] [OUTPUT] #000401 overall=16% phase=95% :: DISM ScanHealth native says: [===========================86.4%==================        ]
+[22:01:46] [INFO] #000402 overall=16% phase=95% :: DISM ScanHealth evidence: stdout +64B, stderr +0B, child CPU total 0.13s
+[22:01:47] [OUTPUT] #000403 overall=16% phase=95% :: DISM ScanHealth native says: [===========================86.5%==================        ]
+[22:01:47] [INFO] #000404 overall=16% phase=95% :: DISM ScanHealth safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[22:01:49] [INFO] #000405 overall=16% phase=95% :: DISM ScanHealth process map: Dism#21936 cpu=0.08s; DismHost#15048 cpu=0.05s
+[22:01:50] [OUTPUT] #000406 overall=16% phase=95% :: DISM ScanHealth native says: [===========================86.9%==================        ]
+[22:01:50] [INFO] #000407 overall=16% phase=95% :: DISM ScanHealth overall repair progress now 16% across all checks and repairs; suppressed duplicate native lines=0
+[22:01:51] [INFO] #000408 overall=16% phase=95% :: DISM ScanHealth watchdog: no silent hang allowed; timeout=7200s elapsed=188s idle=0s
+[22:01:52] [INFO] #000409 overall=16% phase=95% :: DISM ScanHealth native duplicate suppression: skipped 1 repeated copies of '[===========================86.9%==================        ]' before new output arrived
+[22:01:52] [OUTPUT] #000410 overall=16% phase=95% :: DISM ScanHealth native says: [===========================87.1%==================        ]
+[22:01:52] [INFO] #000411 overall=16% phase=95% :: DISM ScanHealth live logs: CBS updated 19s ago, DISM updated 87s ago, movement=True
+[22:01:53] [OUTPUT] #000412 overall=16% phase=95% :: DISM ScanHealth native says: [===========================87.2%==================        ]
+[22:01:53] [INFO] #000413 overall=16% phase=95% :: DISM ScanHealth process map: Dism#21936 cpu=0.08s; DismHost#15048 cpu=0.05s
+[22:01:54] [OUTPUT] #000414 overall=16% phase=95% :: DISM ScanHealth native says: [===========================87.3%==================        ]
+[22:01:54] [INFO] #000415 overall=16% phase=95% :: DISM ScanHealth overall repair progress now 16% across all checks and repairs; suppressed duplicate native lines=0
+[22:01:55] [OUTPUT] #000416 overall=16% phase=95% :: DISM ScanHealth native says: [===========================87.4%==================        ]
+[22:01:55] [INFO] #000417 overall=16% phase=95% :: DISM ScanHealth 95%: native percent when available, otherwise anti-stall timer; elapsed=00:03:12
+[22:01:56] [OUTPUT] #000418 overall=16% phase=95% :: DISM ScanHealth native says: [===========================87.5%==================        ]
+[22:01:56] [INFO] #000419 overall=16% phase=95% :: DISM ScanHealth live logs: CBS updated 24s ago, DISM updated 91s ago, movement=True
+[22:01:57] [OUTPUT] #000420 overall=16% phase=95% :: DISM ScanHealth native says: [===========================87.6%==================        ]
+[22:01:57] [INFO] #000421 overall=16% phase=95% :: DISM ScanHealth process map: Dism#21936 cpu=0.08s; DismHost#15048 cpu=0.05s
+[22:01:58] [OUTPUT] #000422 overall=16% phase=95% :: DISM ScanHealth native says: [===========================87.7%==================        ]
+[22:01:58] [INFO] #000423 overall=16% phase=95% :: DISM ScanHealth overall repair progress now 16% across all checks and repairs; suppressed duplicate native lines=0
+[22:01:59] [OUTPUT] #000424 overall=16% phase=95% :: DISM ScanHealth native says: [===========================87.9%==================        ]
+[22:01:59] [INFO] #000425 overall=16% phase=95% :: DISM ScanHealth 95%: native percent when available, otherwise anti-stall timer; elapsed=00:03:16
+[22:02:00] [OUTPUT] #000426 overall=16% phase=95% :: DISM ScanHealth native says: [===========================88.1%===================       ]
+[22:02:00] [INFO] #000427 overall=16% phase=95% :: DISM ScanHealth live logs: CBS updated 28s ago, DISM updated 95s ago, movement=True
+[22:02:01] [OUTPUT] #000428 overall=16% phase=95% :: DISM ScanHealth native says: [===========================88.2%===================       ]
+[22:02:01] [INFO] #000429 overall=16% phase=95% :: DISM ScanHealth process map: Dism#21936 cpu=0.08s; DismHost#15048 cpu=0.05s
+[22:02:02] [OUTPUT] #000430 overall=16% phase=95% :: DISM ScanHealth native says: [===========================88.3%===================       ]
+[22:02:02] [INFO] #000431 overall=16% phase=95% :: DISM ScanHealth overall repair progress now 16% across all checks and repairs; suppressed duplicate native lines=0
+[22:02:03] [INFO] #000432 overall=16% phase=95% :: DISM ScanHealth watchdog: no silent hang allowed; timeout=7200s elapsed=201s idle=0s
+[22:02:04] [INFO] #000433 overall=16% phase=95% :: DISM ScanHealth 95%: native percent when available, otherwise anti-stall timer; elapsed=00:03:21
+[22:02:05] [INFO] #000434 overall=16% phase=95% :: DISM ScanHealth native duplicate suppression: skipped 1 repeated copies of '[===========================88.3%===================       ]' before new output arrived
+[22:02:05] [OUTPUT] #000435 overall=16% phase=95% :: DISM ScanHealth native says: [===========================88.4%===================       ]
+[22:02:05] [INFO] #000436 overall=16% phase=95% :: DISM ScanHealth safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[22:02:06] [OUTPUT] #000437 overall=16% phase=95% :: DISM ScanHealth native says: [===========================88.6%===================       ]
+[22:02:06] [INFO] #000438 overall=16% phase=95% :: DISM ScanHealth last native message: [===========================88.6%===================       ]
+[22:02:07] [OUTPUT] #000439 overall=16% phase=95% :: DISM ScanHealth native says: [===========================88.8%===================       ]
+[22:02:07] [INFO] #000440 overall=16% phase=95% :: DISM ScanHealth watchdog: no silent hang allowed; timeout=7200s elapsed=205s idle=0s
+[22:02:08] [OUTPUT] #000441 overall=16% phase=95% :: DISM ScanHealth native says: [===========================88.9%===================       ]
+[22:02:08] [INFO] #000442 overall=16% phase=95% :: DISM ScanHealth evidence: stdout +64B, stderr +0B, child CPU total 0.13s
+[22:02:09] [OUTPUT] #000443 overall=16% phase=95% :: DISM ScanHealth native says: [===========================89.1%===================       ]
+[22:02:09] [INFO] #000444 overall=16% phase=95% :: DISM ScanHealth safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[22:02:10] [INFO] #000445 overall=16% phase=95% :: DISM ScanHealth process map: Dism#21936 cpu=0.08s; DismHost#15048 cpu=0.05s
+[22:02:12] [OUTPUT] #000446 overall=16% phase=95% :: DISM ScanHealth native says: [===========================89.3%===================       ]
+[22:02:12] [INFO] #000447 overall=16% phase=95% :: DISM ScanHealth overall repair progress now 16% across all checks and repairs; suppressed duplicate native lines=0
+[22:02:13] [OUTPUT] #000448 overall=16% phase=95% :: DISM ScanHealth native says: [===========================89.4%===================       ]
+[22:02:13] [INFO] #000449 overall=16% phase=95% :: DISM ScanHealth 95%: native percent when available, otherwise anti-stall timer; elapsed=00:03:30
+[22:02:14] [OUTPUT] #000450 overall=16% phase=95% :: DISM ScanHealth native says: [===========================89.6%===================       ]
+[22:02:14] [INFO] #000451 overall=16% phase=95% :: DISM ScanHealth live logs: CBS updated 42s ago, DISM updated 109s ago, movement=True
+[22:02:15] [INFO] #000452 overall=16% phase=95% :: DISM ScanHealth safety clock: idle=0s; auto-stop/retry protection in 180s if nothing changes
+[22:02:16] [INFO] #000453 overall=16% phase=95% :: DISM ScanHealth native duplicate suppression: skipped 1 repeated copies of '[===========================89.6%===================       ]' before new output arrived
+[22:02:16] [OUTPUT] #000454 overall=16% phase=95% :: DISM ScanHealth native says: [===========================90.0%====================      ]
+[22:02:16] [INFO] #000455 overall=16% phase=95% :: DISM ScanHealth overall repair progress now 16% across all checks and repairs; suppressed duplicate native lines=0
+[22:02:17] [INFO] #000456 overall=16% phase=95% :: DISM ScanHealth watchdog: no silent hang allowed; timeout=7200s elapsed=214s idle=0s
+[22:02:18] [INFO] #000457 overall=16% phase=95% :: DISM ScanHealth native duplicate suppression: skipped 1 repeated copies of '[===========================90.0%====================      ]' before new output arrived
+[22:02:18] [OUTPUT] #000458 overall=16% phase=95% :: DISM ScanHealth native says: [===========================90.7%====================      ]
+[22:02:18] [OUTPUT] #000459 overall=16% phase=95% :: DISM ScanHealth native says: [===========================91.7%=====================     ]
+[22:02:18] [OUTPUT] #000460 overall=16% phase=95% :: DISM ScanHealth native says: [===========================92.7%=====================     ]
+[22:02:18] [OUTPUT] #000461 overall=16% phase=95% :: DISM ScanHealth native says: [===========================93.7%======================    ]
+[22:02:18] [OUTPUT] #000462 overall=16% phase=95% :: DISM ScanHealth native says: [===========================94.6%======================    ]
+[22:02:18] [INFO] #000463 overall=16% phase=95% :: DISM ScanHealth overall repair progress now 16% across all checks and repairs; suppressed duplicate native lines=0
+[22:02:19] [OUTPUT] #000464 overall=16% phase=96% :: DISM ScanHealth native says: [===========================95.6%=======================   ]
+[22:02:19] [INFO] #000465 overall=16% phase=96% :: DISM ScanHealth 96%: native percent when available, otherwise anti-stall timer; elapsed=00:03:36
+[22:02:20] [INFO] #000466 overall=16% phase=96% :: DISM ScanHealth evidence: stdout +64B, stderr +0B, child CPU total 0.13s
+[22:02:21] [INFO] #000467 overall=16% phase=96% :: DISM ScanHealth native duplicate suppression: skipped 2 repeated copies of '[===========================95.6%=======================   ]' before new output arrived
+[22:02:21] [OUTPUT] #000468 overall=16% phase=97% :: DISM ScanHealth native says: [===========================96.6%========================  ]
+[22:02:21] [OUTPUT] #000469 overall=16% phase=98% :: DISM ScanHealth native says: [===========================97.6%========================  ]
+[22:02:21] [INFO] #000470 overall=16% phase=98% :: DISM ScanHealth last native message: [===========================97.6%========================  ]
+[22:02:22] [INFO] #000471 overall=16% phase=98% :: DISM ScanHealth overall repair progress now 16% across all checks and repairs; suppressed duplicate native lines=0
+[22:02:23] [INFO] #000472 overall=16% phase=98% :: DISM ScanHealth watchdog: no silent hang allowed; timeout=7200s elapsed=221s idle=0s
+[22:02:24] [INFO] #000473 overall=16% phase=98% :: DISM ScanHealth 98%: native percent when available, otherwise anti-stall timer; elapsed=00:03:41
+[22:02:25] [INFO] #000474 overall=16% phase=98% :: DISM ScanHealth evidence: stdout +0B, stderr +0B, child CPU total 0.13s
+[22:02:26] [INFO] #000475 overall=16% phase=98% :: DISM ScanHealth live logs: CBS updated 2s ago, DISM updated 121s ago, movement=True
+[22:02:30] [INFO] #000476 overall=16% phase=98% :: DISM ScanHealth safety clock: idle=3s; auto-stop/retry protection in 177s if nothing changes
+[22:02:31] [OUTPUT] #000477 overall=17% phase=100% :: DISM ScanHealth native says: [==========================100.0%==========================]
+[22:02:31] [INFO] #000478 overall=17% phase=100% :: DISM ScanHealth last native message: [==========================100.0%==========================]
+[22:02:32] [OUTPUT] #000479 overall=17% phase=100% :: DISM ScanHealth native says: The component store is repairable.
+[22:02:34] [OUTPUT] #000480 overall=17% phase=100% :: DISM ScanHealth native says: The operation completed successfully.
+[22:03:25] [INFO] #000481 overall=17% phase=100% :: DISM ScanHealth 100%: native percent when available, otherwise anti-stall timer; elapsed=00:04:42
+[22:03:25] [INFO] #000482 overall=17% phase=100% :: phase-end: DISM ScanHealth; exit=0
+[22:03:26] [INFO] #000483 overall=17% phase=0% :: phase-start: DISM RestoreHealth online attempt 1; command=C:\Windows\System32\dism.exe /Online /Cleanup-Image /RestoreHealth
+[22:03:28] [OUTPUT] #000484 overall=17% phase=0% :: DISM RestoreHealth online attempt 1 native says: Deployment Image Servicing and Management tool
+[22:03:28] [OUTPUT] #000485 overall=17% phase=0% :: DISM RestoreHealth online attempt 1 native says: Version: 10.0.26100.5074
+[22:03:28] [OUTPUT] #000486 overall=17% phase=0% :: DISM RestoreHealth online attempt 1 native says: Image Version: 10.0.26200.8246
+[22:03:28] [INFO] #000487 overall=17% phase=0% :: DISM RestoreHealth online attempt 1 overall repair progress now 17% across all checks and repairs; suppressed duplicate native lines=0
+[22:03:30] [INFO] #000488 overall=17% phase=1% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=3s idle=0s
+[22:03:31] [INFO] #000489 overall=17% phase=2% :: DISM RestoreHealth online attempt 1 2%: native percent when available, otherwise anti-stall timer; elapsed=00:00:04
+[22:03:32] [INFO] #000490 overall=17% phase=2% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.06s
+[22:03:33] [INFO] #000491 overall=17% phase=2% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 0s ago, DISM updated 5s ago, movement=True
+[22:03:34] [INFO] #000492 overall=17% phase=3% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:03:35] [INFO] #000493 overall=17% phase=4% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.02s; DismHost#38812 cpu=0.05s
+[22:03:37] [INFO] #000494 overall=17% phase=4% :: DISM RestoreHealth online attempt 1 last native message: Image Version: 10.0.26200.8246
+[22:03:38] [INFO] #000495 overall=17% phase=5% :: DISM RestoreHealth online attempt 1 overall repair progress now 17% across all checks and repairs; suppressed duplicate native lines=0
+[22:03:39] [INFO] #000496 overall=17% phase=5% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=12s idle=0s
+[22:03:40] [INFO] #000497 overall=17% phase=5% :: DISM RestoreHealth online attempt 1 5%: native percent when available, otherwise anti-stall timer; elapsed=00:00:13
+[22:03:42] [INFO] #000498 overall=17% phase=6% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.06s
+[22:03:43] [INFO] #000499 overall=17% phase=7% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 0s ago, DISM updated 15s ago, movement=True
+[22:03:44] [INFO] #000500 overall=17% phase=7% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:03:45] [INFO] #000501 overall=17% phase=8% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.02s; DismHost#38812 cpu=0.05s
+[22:03:57] [INFO] #000502 overall=18% phase=13% :: DISM RestoreHealth online attempt 1 last native message: Image Version: 10.0.26200.8246
+[22:04:03] [INFO] #000503 overall=18% phase=15% :: DISM RestoreHealth online attempt 1 overall repair progress now 18% across all checks and repairs; suppressed duplicate native lines=0
+[22:04:05] [INFO] #000504 overall=18% phase=16% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=38s idle=0s
+[22:04:06] [INFO] #000505 overall=18% phase=16% :: DISM RestoreHealth online attempt 1 16%: native percent when available, otherwise anti-stall timer; elapsed=00:00:38
+[22:04:07] [INFO] #000506 overall=18% phase=17% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.06s
+[22:04:08] [INFO] #000507 overall=18% phase=17% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 0s ago, DISM updated 40s ago, movement=True
+[22:04:09] [INFO] #000508 overall=18% phase=18% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:04:10] [INFO] #000509 overall=18% phase=18% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.02s; DismHost#38812 cpu=0.05s
+[22:04:12] [INFO] #000510 overall=18% phase=19% :: DISM RestoreHealth online attempt 1 last native message: Image Version: 10.0.26200.8246
+[22:04:13] [INFO] #000511 overall=18% phase=19% :: DISM RestoreHealth online attempt 1 overall repair progress now 18% across all checks and repairs; suppressed duplicate native lines=0
+[22:04:14] [OUTPUT] #000512 overall=18% phase=19% :: DISM RestoreHealth online attempt 1 native says: [==                         3.8%                           ]
+[22:04:14] [INFO] #000513 overall=18% phase=20% :: DISM RestoreHealth online attempt 1 20%: native percent when available, otherwise anti-stall timer; elapsed=00:00:47
+[22:04:15] [OUTPUT] #000514 overall=18% phase=20% :: DISM RestoreHealth online attempt 1 native says: [==                         4.8%                           ]
+[22:04:15] [OUTPUT] #000515 overall=18% phase=20% :: DISM RestoreHealth online attempt 1 native says: [===                        5.7%                           ]
+[22:04:16] [INFO] #000516 overall=18% phase=20% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:04:18] [OUTPUT] #000517 overall=18% phase=20% :: DISM RestoreHealth online attempt 1 native says: [===                        6.7%                           ]
+[22:04:18] [OUTPUT] #000518 overall=18% phase=20% :: DISM RestoreHealth online attempt 1 native says: [====                       7.7%                           ]
+[22:04:19] [INFO] #000519 overall=18% phase=22% :: DISM RestoreHealth online attempt 1 overall repair progress now 18% across all checks and repairs; suppressed duplicate native lines=0
+[22:04:21] [OUTPUT] #000520 overall=18% phase=22% :: DISM RestoreHealth online attempt 1 native says: [=====                      8.7%                           ]
+[22:04:21] [OUTPUT] #000521 overall=18% phase=22% :: DISM RestoreHealth online attempt 1 native says: [=====                      9.7%                           ]
+[22:04:21] [OUTPUT] #000522 overall=18% phase=22% :: DISM RestoreHealth online attempt 1 native says: [======                     10.6%                          ]
+[22:04:21] [OUTPUT] #000523 overall=18% phase=22% :: DISM RestoreHealth online attempt 1 native says: [======                     11.6%                          ]
+[22:04:21] [OUTPUT] #000524 overall=18% phase=22% :: DISM RestoreHealth online attempt 1 native says: [=======                    12.6%                          ]
+[22:04:21] [OUTPUT] #000525 overall=18% phase=22% :: DISM RestoreHealth online attempt 1 native says: [=======                    13.6%                          ]
+[22:04:21] [OUTPUT] #000526 overall=18% phase=22% :: DISM RestoreHealth online attempt 1 native says: [========                   14.6%                          ]
+[22:04:21] [INFO] #000527 overall=18% phase=22% :: DISM RestoreHealth online attempt 1 overall repair progress now 18% across all checks and repairs; suppressed duplicate native lines=0
+[22:04:22] [OUTPUT] #000528 overall=18% phase=22% :: DISM RestoreHealth online attempt 1 native says: [=========                  15.5%                          ]
+[22:04:22] [OUTPUT] #000529 overall=18% phase=22% :: DISM RestoreHealth online attempt 1 native says: [=========                  16.5%                          ]
+[22:04:32] [INFO] #000530 overall=19% phase=27% :: DISM RestoreHealth online attempt 1 evidence: stdout +128B, stderr +0B, child CPU total 0.06s
+[22:04:33] [OUTPUT] #000531 overall=19% phase=27% :: DISM RestoreHealth online attempt 1 native says: [=========                  17.0%                          ]
+[22:05:42] [OUTPUT] #000532 overall=19% phase=27% :: DISM RestoreHealth online attempt 1 native says: [=========                  17.1%                          ]
+[22:05:42] [INFO] #000533 overall=19% phase=27% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 1 repeated copies of '[=========                  17.1%                          ]' before new output arrived
+[22:05:42] [OUTPUT] #000534 overall=19% phase=27% :: DISM RestoreHealth online attempt 1 native says: [==========                 17.4%                          ]
+[22:05:42] [INFO] #000535 overall=19% phase=27% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 1 repeated copies of '[==========                 17.4%                          ]' before new output arrived
+[22:05:43] [OUTPUT] #000536 overall=19% phase=27% :: DISM RestoreHealth online attempt 1 native says: [==========                 17.5%                          ]
+[22:05:44] [OUTPUT] #000537 overall=19% phase=27% :: DISM RestoreHealth online attempt 1 native says: [==========                 17.6%                          ]
+[22:05:45] [OUTPUT] #000538 overall=19% phase=27% :: DISM RestoreHealth online attempt 1 native says: [==========                 17.7%                          ]
+[22:05:46] [OUTPUT] #000539 overall=19% phase=27% :: DISM RestoreHealth online attempt 1 native says: [==========                 17.8%                          ]
+[22:05:46] [INFO] #000540 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:05:47] [OUTPUT] #000541 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native says: [==========                 17.9%                          ]
+[22:05:47] [OUTPUT] #000542 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native says: [==========                 18.0%                          ]
+[22:05:47] [INFO] #000543 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 2 repeated copies of '[==========                 18.0%                          ]' before new output arrived
+[22:05:47] [OUTPUT] #000544 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native says: [==========                 18.2%                          ]
+[22:05:48] [INFO] #000545 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 2 repeated copies of '[==========                 18.2%                          ]' before new output arrived
+[22:05:48] [OUTPUT] #000546 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native says: [==========                 18.3%                          ]
+[22:05:48] [INFO] #000547 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 4 repeated copies of '[==========                 18.3%                          ]' before new output arrived
+[22:05:48] [OUTPUT] #000548 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native says: [==========                 18.4%                          ]
+[22:05:48] [OUTPUT] #000549 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native says: [==========                 18.6%                          ]
+[22:05:48] [OUTPUT] #000550 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native says: [==========                 18.8%                          ]
+[22:05:48] [OUTPUT] #000551 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native says: [==========                 18.9%                          ]
+[22:05:48] [OUTPUT] #000552 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native says: [===========                19.1%                          ]
+[22:05:48] [OUTPUT] #000553 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native says: [===========                19.3%                          ]
+[22:05:48] [INFO] #000554 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 2 repeated copies of '[===========                19.3%                          ]' before new output arrived
+[22:05:48] [OUTPUT] #000555 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native says: [===========                19.8%                          ]
+[22:05:48] [OUTPUT] #000556 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native says: [===========                20.4%                          ]
+[22:05:48] [OUTPUT] #000557 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native says: [============               21.0%                          ]
+[22:05:48] [OUTPUT] #000558 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native says: [============               22.0%                          ]
+[22:05:48] [OUTPUT] #000559 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native says: [=============              22.5%                          ]
+[22:05:48] [OUTPUT] #000560 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native says: [=============              23.5%                          ]
+[22:05:48] [OUTPUT] #000561 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native says: [==============             24.5%                          ]
+[22:05:48] [OUTPUT] #000562 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native says: [==============             25.4%                          ]
+[22:05:48] [OUTPUT] #000563 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native says: [===============            26.4%                          ]
+[22:05:48] [OUTPUT] #000564 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native says: [===============            26.6%                          ]
+[22:05:48] [INFO] #000565 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 1 repeated copies of '[===============            26.6%                          ]' before new output arrived
+[22:05:48] [OUTPUT] #000566 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native says: [===============            27.5%                          ]
+[22:05:48] [OUTPUT] #000567 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native says: [================           27.8%                          ]
+[22:05:48] [OUTPUT] #000568 overall=22% phase=58% :: DISM RestoreHealth online attempt 1 native says: [================           28.8%                          ]
+[22:05:48] [INFO] #000569 overall=22% phase=59% :: DISM RestoreHealth online attempt 1 59%: native percent when available, otherwise anti-stall timer; elapsed=00:02:21
+[22:05:50] [OUTPUT] #000570 overall=22% phase=59% :: DISM RestoreHealth online attempt 1 native says: [================           29.0%                          ]
+[22:05:50] [OUTPUT] #000571 overall=22% phase=59% :: DISM RestoreHealth online attempt 1 native says: [================           29.1%                          ]
+[22:05:50] [INFO] #000572 overall=22% phase=60% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:05:51] [OUTPUT] #000573 overall=22% phase=60% :: DISM RestoreHealth online attempt 1 native says: [================           29.2%                          ]
+[22:05:51] [INFO] #000574 overall=22% phase=60% :: DISM RestoreHealth online attempt 1 last native message: [================           29.2%                          ]
+[22:05:52] [OUTPUT] #000575 overall=22% phase=60% :: DISM RestoreHealth online attempt 1 native says: [=================          30.0%                          ]
+[22:05:52] [OUTPUT] #000576 overall=22% phase=60% :: DISM RestoreHealth online attempt 1 native says: [=================          30.9%                          ]
+[22:05:53] [OUTPUT] #000577 overall=22% phase=60% :: DISM RestoreHealth online attempt 1 native says: [==================         31.9%                          ]
+[22:05:53] [INFO] #000578 overall=22% phase=61% :: DISM RestoreHealth online attempt 1 evidence: stdout +192B, stderr +0B, child CPU total 0.09s
+[22:05:57] [OUTPUT] #000579 overall=22% phase=61% :: DISM RestoreHealth online attempt 1 native says: [===================        32.9%                          ]
+[22:05:57] [OUTPUT] #000580 overall=22% phase=61% :: DISM RestoreHealth online attempt 1 native says: [===================        33.4%                          ]
+[22:05:57] [OUTPUT] #000581 overall=22% phase=61% :: DISM RestoreHealth online attempt 1 native says: [===================        33.7%                          ]
+[22:05:57] [OUTPUT] #000582 overall=22% phase=61% :: DISM RestoreHealth online attempt 1 native says: [===================        34.3%                          ]
+[22:05:57] [INFO] #000583 overall=22% phase=62% :: DISM RestoreHealth online attempt 1 overall repair progress now 22% across all checks and repairs; suppressed duplicate native lines=0
+[22:05:58] [INFO] #000584 overall=22% phase=63% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=151s idle=1s
+[22:05:59] [OUTPUT] #000585 overall=22% phase=63% :: DISM RestoreHealth online attempt 1 native says: [====================       34.6%                          ]
+[22:05:59] [INFO] #000586 overall=22% phase=63% :: DISM RestoreHealth online attempt 1 evidence: stdout +64B, stderr +0B, child CPU total 0.09s
+[22:06:08] [OUTPUT] #000587 overall=22% phase=63% :: DISM RestoreHealth online attempt 1 native says: [====================       34.9%                          ]
+[22:06:15] [INFO] #000588 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:07:01] [OUTPUT] #000589 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [====================       35.2%                          ]
+[22:08:01] [OUTPUT] #000590 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [====================       35.4%                          ]
+[22:08:01] [INFO] #000591 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 2 repeated copies of '[====================       35.4%                          ]' before new output arrived
+[22:08:01] [OUTPUT] #000592 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [====================       35.7%                          ]
+[22:08:01] [OUTPUT] #000593 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [====================       36.2%                          ]
+[22:08:01] [OUTPUT] #000594 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [=====================      36.8%                          ]
+[22:08:01] [OUTPUT] #000595 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [=====================      37.7%                          ]
+[22:08:01] [OUTPUT] #000596 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [=====================      37.9%                          ]
+[22:08:01] [OUTPUT] #000597 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [======================     38.1%                          ]
+[22:08:01] [OUTPUT] #000598 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [======================     38.4%                          ]
+[22:08:01] [OUTPUT] #000599 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [======================     38.7%                          ]
+[22:08:01] [OUTPUT] #000600 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [======================     39.3%                          ]
+[22:08:01] [OUTPUT] #000601 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [=======================    39.8%                          ]
+[22:08:01] [OUTPUT] #000602 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [=======================    40.3%                          ]
+[22:08:01] [OUTPUT] #000603 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [=======================    40.6%                          ]
+[22:08:01] [OUTPUT] #000604 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [========================   41.6%                          ]
+[22:08:01] [OUTPUT] #000605 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [========================   42.3%                          ]
+[22:08:01] [OUTPUT] #000606 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [========================   42.6%                          ]
+[22:08:01] [OUTPUT] #000607 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [========================   42.9%                          ]
+[22:08:01] [OUTPUT] #000608 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [=========================  43.8%                          ]
+[22:08:01] [OUTPUT] #000609 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [========================== 44.8%                          ]
+[22:08:01] [OUTPUT] #000610 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [========================== 45.8%                          ]
+[22:08:01] [OUTPUT] #000611 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [===========================46.8%                          ]
+[22:08:01] [OUTPUT] #000612 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [===========================47.8%                          ]
+[22:08:02] [OUTPUT] #000613 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [===========================48.8%                          ]
+[22:08:02] [OUTPUT] #000614 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [===========================49.7%                          ]
+[22:08:02] [OUTPUT] #000615 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [===========================50.7%                          ]
+[22:08:02] [OUTPUT] #000616 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [===========================51.7%                          ]
+[22:08:02] [OUTPUT] #000617 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [===========================52.7%                          ]
+[22:08:02] [OUTPUT] #000618 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [===========================53.4%                          ]
+[22:08:02] [OUTPUT] #000619 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [===========================53.5%                          ]
+[22:08:02] [INFO] #000620 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 1 repeated copies of '[===========================53.5%                          ]' before new output arrived
+[22:08:02] [OUTPUT] #000621 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [===========================53.6%                          ]
+[22:08:02] [OUTPUT] #000622 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [===========================53.7%                          ]
+[22:08:02] [INFO] #000623 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 2 repeated copies of '[===========================53.7%                          ]' before new output arrived
+[22:08:02] [OUTPUT] #000624 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [===========================53.9%                          ]
+[22:08:02] [INFO] #000625 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 2 repeated copies of '[===========================53.9%                          ]' before new output arrived
+[22:08:02] [OUTPUT] #000626 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [===========================54.0%                          ]
+[22:08:02] [INFO] #000627 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 5 repeated copies of '[===========================54.0%                          ]' before new output arrived
+[22:08:02] [OUTPUT] #000628 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [===========================54.1%                          ]
+[22:08:02] [INFO] #000629 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 1 repeated copies of '[===========================54.1%                          ]' before new output arrived
+[22:08:02] [OUTPUT] #000630 overall=22% phase=70% :: DISM RestoreHealth online attempt 1 native says: [===========================54.2%                          ]
+[22:08:02] [INFO] #000631 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=1
+[22:08:03] [INFO] #000632 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 3 repeated copies of '[===========================54.2%                          ]' before new output arrived
+[22:08:03] [OUTPUT] #000633 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================54.3%                          ]
+[22:08:03] [INFO] #000634 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 4 repeated copies of '[===========================54.3%                          ]' before new output arrived
+[22:08:03] [OUTPUT] #000635 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================54.4%                          ]
+[22:08:03] [INFO] #000636 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 1 repeated copies of '[===========================54.4%                          ]' before new output arrived
+[22:08:03] [OUTPUT] #000637 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================54.5%                          ]
+[22:08:03] [INFO] #000638 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 1 repeated copies of '[===========================54.5%                          ]' before new output arrived
+[22:08:03] [OUTPUT] #000639 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================54.6%                          ]
+[22:08:03] [INFO] #000640 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 5 repeated copies of '[===========================54.6%                          ]' before new output arrived
+[22:08:03] [OUTPUT] #000641 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================54.7%                          ]
+[22:08:03] [INFO] #000642 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 3 repeated copies of '[===========================54.7%                          ]' before new output arrived
+[22:08:03] [OUTPUT] #000643 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================54.8%                          ]
+[22:08:03] [INFO] #000644 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 2 repeated copies of '[===========================54.8%                          ]' before new output arrived
+[22:08:03] [OUTPUT] #000645 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================54.9%                          ]
+[22:08:03] [INFO] #000646 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 1 repeated copies of '[===========================54.9%                          ]' before new output arrived
+[22:08:03] [OUTPUT] #000647 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================55.0%                          ]
+[22:08:04] [INFO] #000648 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 1 repeated copies of '[===========================55.0%                          ]' before new output arrived
+[22:08:04] [OUTPUT] #000649 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================55.1%                          ]
+[22:08:04] [INFO] #000650 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 1 repeated copies of '[===========================55.1%                          ]' before new output arrived
+[22:08:04] [OUTPUT] #000651 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================55.2%                          ]
+[22:08:04] [INFO] #000652 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 2 repeated copies of '[===========================55.2%                          ]' before new output arrived
+[22:08:04] [OUTPUT] #000653 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================55.3%                          ]
+[22:08:04] [INFO] #000654 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 1 repeated copies of '[===========================55.3%                          ]' before new output arrived
+[22:08:04] [OUTPUT] #000655 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================55.5%                          ]
+[22:08:04] [INFO] #000656 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 2 repeated copies of '[===========================55.5%                          ]' before new output arrived
+[22:08:04] [OUTPUT] #000657 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================55.7%                          ]
+[22:08:04] [OUTPUT] #000658 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================55.8%                          ]
+[22:08:04] [INFO] #000659 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 2 repeated copies of '[===========================55.8%                          ]' before new output arrived
+[22:08:04] [OUTPUT] #000660 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================56.2%                          ]
+[22:08:04] [OUTPUT] #000661 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================56.8%                          ]
+[22:08:04] [OUTPUT] #000662 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================57.8%=                         ]
+[22:08:04] [OUTPUT] #000663 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================58.8%==                        ]
+[22:08:04] [OUTPUT] #000664 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================59.2%==                        ]
+[22:08:04] [INFO] #000665 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:04:37
+[22:08:05] [INFO] #000666 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +64B, stderr +0B, child CPU total 0.11s
+[22:08:06] [INFO] #000667 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 1 repeated copies of '[===========================59.2%==                        ]' before new output arrived
+[22:08:06] [OUTPUT] #000668 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================60.2%==                        ]
+[22:08:06] [INFO] #000669 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.05s; DismHost#38812 cpu=0.06s
+[22:08:07] [INFO] #000670 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================60.2%==                        ]
+[22:08:08] [INFO] #000671 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=0
+[22:08:09] [INFO] #000672 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=282s idle=0s
+[22:08:10] [INFO] #000673 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:04:43
+[22:08:11] [INFO] #000674 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.11s
+[22:08:12] [INFO] #000675 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 1s ago, DISM updated 284s ago, movement=True
+[22:08:13] [OUTPUT] #000676 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================62.3%====                      ]
+[22:08:13] [INFO] #000677 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.05s; DismHost#38812 cpu=0.06s
+[22:08:14] [INFO] #000678 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================62.3%====                      ]
+[22:08:15] [INFO] #000679 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=0
+[22:08:16] [INFO] #000680 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=290s idle=2s
+[22:08:18] [OUTPUT] #000681 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================62.6%====                      ]
+[22:08:18] [INFO] #000682 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +64B, stderr +0B, child CPU total 0.11s
+[22:08:19] [INFO] #000683 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 1s ago, DISM updated 291s ago, movement=True
+[22:08:20] [INFO] #000684 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:08:21] [INFO] #000685 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.05s; DismHost#38812 cpu=0.06s
+[22:08:22] [INFO] #000686 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================62.6%====                      ]
+[22:08:23] [INFO] #000687 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=3
+[22:08:24] [INFO] #000688 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=297s idle=0s
+[22:08:55] [INFO] #000689 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:05:27
+[22:08:56] [INFO] #000690 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +960B, stderr +0B, child CPU total 0.11s
+[22:08:57] [INFO] #000691 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 0s ago, DISM updated 329s ago, movement=True
+[22:08:58] [INFO] #000692 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:08:59] [INFO] #000693 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.05s; DismHost#38812 cpu=0.06s
+[22:09:00] [INFO] #000694 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================62.6%====                      ]
+[22:09:01] [INFO] #000695 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=22
+[22:09:02] [INFO] #000696 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=335s idle=0s
+[22:09:03] [INFO] #000697 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:05:36
+[22:09:04] [INFO] #000698 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.11s
+[22:09:16] [INFO] #000699 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 1s ago, DISM updated 348s ago, movement=True
+[22:09:17] [INFO] #000700 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:09:19] [INFO] #000701 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.05s; DismHost#38812 cpu=0.06s
+[22:09:20] [INFO] #000702 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================62.6%====                      ]
+[22:09:21] [INFO] #000703 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=31
+[22:09:22] [INFO] #000704 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=355s idle=0s
+[22:09:23] [INFO] #000705 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:05:56
+[22:09:24] [INFO] #000706 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.11s
+[22:09:25] [INFO] #000707 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 1s ago, DISM updated 357s ago, movement=True
+[22:09:26] [INFO] #000708 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:09:27] [INFO] #000709 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.05s; DismHost#38812 cpu=0.06s
+[22:09:28] [INFO] #000710 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================62.6%====                      ]
+[22:09:30] [INFO] #000711 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=36
+[22:09:31] [INFO] #000712 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=364s idle=0s
+[22:09:32] [INFO] #000713 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:06:04
+[22:09:33] [INFO] #000714 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.11s
+[22:09:34] [INFO] #000715 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 1s ago, DISM updated 366s ago, movement=True
+[22:09:35] [INFO] #000716 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:09:36] [INFO] #000717 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.05s; DismHost#38812 cpu=0.06s
+[22:09:37] [INFO] #000718 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================62.6%====                      ]
+[22:09:38] [INFO] #000719 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=40
+[22:09:39] [INFO] #000720 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=372s idle=0s
+[22:09:40] [INFO] #000721 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:06:13
+[22:09:41] [INFO] #000722 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 41 repeated copies of '[===========================62.6%====                      ]' before new output arrived
+[22:09:41] [OUTPUT] #000723 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================63.0%====                      ]
+[22:09:41] [INFO] #000724 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:09:42] [INFO] #000725 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.05s; DismHost#38812 cpu=0.06s
+[22:09:43] [INFO] #000726 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================63.0%====                      ]
+[22:09:44] [INFO] #000727 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=1
+[22:09:45] [INFO] #000728 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=378s idle=0s
+[22:09:46] [INFO] #000729 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:06:19
+[22:09:47] [INFO] #000730 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 2 repeated copies of '[===========================63.0%====                      ]' before new output arrived
+[22:09:47] [OUTPUT] #000731 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================63.1%====                      ]
+[22:09:47] [INFO] #000732 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:09:48] [OUTPUT] #000733 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================63.2%====                      ]
+[22:09:48] [INFO] #000734 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================63.2%====                      ]
+[22:09:49] [INFO] #000735 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=1
+[22:09:50] [INFO] #000736 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=384s idle=0s
+[22:09:51] [INFO] #000737 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 1 repeated copies of '[===========================63.2%====                      ]' before new output arrived
+[22:09:51] [OUTPUT] #000738 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================63.3%====                      ]
+[22:09:52] [INFO] #000739 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 1s ago, DISM updated 384s ago, movement=True
+[22:09:53] [INFO] #000740 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:09:54] [INFO] #000741 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.05s; DismHost#38812 cpu=0.06s
+[22:09:55] [INFO] #000742 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================63.3%====                      ]
+[22:09:56] [INFO] #000743 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=2
+[22:09:57] [INFO] #000744 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=390s idle=0s
+[22:09:58] [INFO] #000745 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:06:30
+[22:09:59] [INFO] #000746 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.13s
+[22:10:00] [INFO] #000747 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 1s ago, DISM updated 392s ago, movement=True
+[22:10:01] [INFO] #000748 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:10:02] [INFO] #000749 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.06s; DismHost#38812 cpu=0.06s
+[22:10:03] [INFO] #000750 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================63.3%====                      ]
+[22:10:04] [INFO] #000751 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=6
+[22:10:05] [INFO] #000752 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=398s idle=0s
+[22:10:06] [INFO] #000753 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:06:39
+[22:10:07] [INFO] #000754 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.13s
+[22:10:13] [INFO] #000755 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 2s ago, DISM updated 405s ago, movement=True
+[22:10:14] [INFO] #000756 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:10:15] [INFO] #000757 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.06s; DismHost#38812 cpu=0.06s
+[22:10:16] [INFO] #000758 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================63.3%====                      ]
+[22:10:17] [INFO] #000759 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=12
+[22:10:18] [INFO] #000760 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=411s idle=0s
+[22:10:19] [INFO] #000761 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:06:51
+[22:10:25] [INFO] #000762 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +192B, stderr +0B, child CPU total 0.13s
+[22:10:36] [INFO] #000763 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 0s ago, DISM updated 428s ago, movement=True
+[22:10:37] [INFO] #000764 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:10:38] [INFO] #000765 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.08s; DismHost#38812 cpu=0.06s
+[22:10:39] [INFO] #000766 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================63.3%====                      ]
+[22:10:40] [INFO] #000767 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=24
+[22:10:41] [INFO] #000768 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=434s idle=0s
+[22:10:42] [INFO] #000769 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:07:14
+[22:10:43] [INFO] #000770 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.14s
+[22:10:44] [INFO] #000771 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 1s ago, DISM updated 436s ago, movement=True
+[22:10:45] [INFO] #000772 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:10:46] [INFO] #000773 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.08s; DismHost#38812 cpu=0.06s
+[22:10:47] [INFO] #000774 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================63.3%====                      ]
+[22:10:48] [INFO] #000775 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=28
+[22:10:49] [INFO] #000776 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=442s idle=0s
+[22:10:50] [INFO] #000777 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:07:23
+[22:10:51] [INFO] #000778 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.14s
+[22:10:52] [INFO] #000779 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 1s ago, DISM updated 444s ago, movement=True
+[22:10:53] [INFO] #000780 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:11:06] [INFO] #000781 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.08s; DismHost#38812 cpu=0.06s
+[22:11:07] [INFO] #000782 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================63.3%====                      ]
+[22:11:08] [INFO] #000783 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=38
+[22:11:09] [INFO] #000784 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=462s idle=0s
+[22:11:10] [INFO] #000785 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:07:43
+[22:11:11] [INFO] #000786 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.14s
+[22:11:12] [INFO] #000787 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 1s ago, DISM updated 464s ago, movement=True
+[22:11:13] [INFO] #000788 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:11:14] [INFO] #000789 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.08s; DismHost#38812 cpu=0.06s
+[22:11:15] [INFO] #000790 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================63.3%====                      ]
+[22:11:16] [INFO] #000791 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=42
+[22:11:18] [INFO] #000792 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=471s idle=0s
+[22:11:19] [INFO] #000793 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:07:51
+[22:11:20] [INFO] #000794 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +64B, stderr +0B, child CPU total 0.14s
+[22:11:21] [INFO] #000795 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 1s ago, DISM updated 473s ago, movement=True
+[22:11:22] [INFO] #000796 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:11:23] [INFO] #000797 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.08s; DismHost#38812 cpu=0.06s
+[22:11:24] [INFO] #000798 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================63.3%====                      ]
+[22:11:25] [INFO] #000799 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=46
+[22:11:26] [INFO] #000800 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=479s idle=0s
+[22:11:27] [INFO] #000801 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:07:59
+[22:11:28] [INFO] #000802 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +64B, stderr +0B, child CPU total 0.14s
+[22:11:29] [INFO] #000803 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 1s ago, DISM updated 481s ago, movement=True
+[22:11:30] [INFO] #000804 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:11:31] [INFO] #000805 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.08s; DismHost#38812 cpu=0.06s
+[22:11:32] [INFO] #000806 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================63.3%====                      ]
+[22:11:33] [INFO] #000807 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=50
+[22:11:34] [INFO] #000808 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=487s idle=0s
+[22:11:35] [INFO] #000809 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:08:08
+[22:11:36] [INFO] #000810 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +64B, stderr +0B, child CPU total 0.14s
+[22:11:37] [INFO] #000811 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 2s ago, DISM updated 489s ago, movement=True
+[22:11:38] [INFO] #000812 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:11:39] [INFO] #000813 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.08s; DismHost#38812 cpu=0.06s
+[22:11:40] [INFO] #000814 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================63.3%====                      ]
+[22:11:41] [INFO] #000815 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=54
+[22:11:42] [INFO] #000816 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=496s idle=0s
+[22:11:43] [INFO] #000817 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:08:16
+[22:11:45] [INFO] #000818 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +64B, stderr +0B, child CPU total 0.14s
+[22:11:46] [INFO] #000819 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 0s ago, DISM updated 498s ago, movement=True
+[22:11:47] [INFO] #000820 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:11:48] [INFO] #000821 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.08s; DismHost#38812 cpu=0.06s
+[22:11:49] [INFO] #000822 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================63.3%====                      ]
+[22:11:50] [INFO] #000823 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=59
+[22:11:51] [INFO] #000824 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=504s idle=0s
+[22:11:52] [INFO] #000825 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:08:25
+[22:11:53] [INFO] #000826 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.14s
+[22:11:54] [INFO] #000827 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 0s ago, DISM updated 506s ago, movement=True
+[22:11:55] [INFO] #000828 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:11:56] [INFO] #000829 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.08s; DismHost#38812 cpu=0.06s
+[22:11:57] [INFO] #000830 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================63.3%====                      ]
+[22:11:58] [INFO] #000831 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=63
+[22:11:59] [INFO] #000832 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=512s idle=0s
+[22:12:00] [INFO] #000833 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:08:33
+[22:12:01] [INFO] #000834 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.14s
+[22:12:02] [INFO] #000835 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 1s ago, DISM updated 514s ago, movement=True
+[22:12:03] [INFO] #000836 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:12:04] [INFO] #000837 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.08s; DismHost#38812 cpu=0.06s
+[22:12:06] [INFO] #000838 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================63.3%====                      ]
+[22:12:07] [INFO] #000839 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=67
+[22:12:08] [INFO] #000840 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=521s idle=0s
+[22:12:09] [INFO] #000841 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:08:42
+[22:12:10] [INFO] #000842 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +64B, stderr +0B, child CPU total 0.14s
+[22:12:11] [INFO] #000843 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 2s ago, DISM updated 523s ago, movement=True
+[22:12:13] [INFO] #000844 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:12:14] [INFO] #000845 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.08s; DismHost#38812 cpu=0.06s
+[22:12:15] [INFO] #000846 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================63.3%====                      ]
+[22:12:16] [INFO] #000847 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=72
+[22:12:18] [INFO] #000848 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=531s idle=0s
+[22:12:19] [INFO] #000849 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:08:51
+[22:12:20] [INFO] #000850 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +64B, stderr +0B, child CPU total 0.14s
+[22:12:21] [INFO] #000851 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 1s ago, DISM updated 533s ago, movement=True
+[22:12:22] [INFO] #000852 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:12:23] [INFO] #000853 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.08s; DismHost#38812 cpu=0.06s
+[22:12:24] [INFO] #000854 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================63.3%====                      ]
+[22:12:25] [INFO] #000855 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=76
+[22:12:26] [INFO] #000856 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=539s idle=0s
+[22:12:27] [INFO] #000857 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:09:00
+[22:12:28] [INFO] #000858 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +64B, stderr +0B, child CPU total 0.16s
+[22:12:29] [INFO] #000859 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 1s ago, DISM updated 541s ago, movement=True
+[22:12:30] [INFO] #000860 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:12:31] [INFO] #000861 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.08s; DismHost#38812 cpu=0.08s
+[22:12:32] [INFO] #000862 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================63.3%====                      ]
+[22:12:33] [INFO] #000863 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=80
+[22:12:34] [INFO] #000864 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=547s idle=0s
+[22:12:35] [INFO] #000865 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:09:08
+[22:12:36] [INFO] #000866 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +64B, stderr +0B, child CPU total 0.16s
+[22:12:37] [INFO] #000867 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 2s ago, DISM updated 549s ago, movement=True
+[22:12:38] [INFO] #000868 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:12:39] [INFO] #000869 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.08s; DismHost#38812 cpu=0.08s
+[22:12:40] [INFO] #000870 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================63.3%====                      ]
+[22:12:41] [INFO] #000871 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=84
+[22:12:43] [INFO] #000872 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=556s idle=0s
+[22:12:44] [INFO] #000873 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:09:16
+[22:12:45] [INFO] #000874 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +64B, stderr +0B, child CPU total 0.16s
+[22:12:46] [INFO] #000875 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 2s ago, DISM updated 558s ago, movement=True
+[22:12:47] [INFO] #000876 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:12:48] [INFO] #000877 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.08s; DismHost#38812 cpu=0.08s
+[22:12:49] [INFO] #000878 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================63.3%====                      ]
+[22:12:50] [INFO] #000879 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=88
+[22:12:51] [INFO] #000880 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=564s idle=0s
+[22:12:52] [INFO] #000881 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:09:25
+[22:12:53] [INFO] #000882 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.16s
+[22:12:54] [INFO] #000883 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 0s ago, DISM updated 566s ago, movement=True
+[22:12:55] [INFO] #000884 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:12:56] [INFO] #000885 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.08s; DismHost#38812 cpu=0.08s
+[22:12:57] [INFO] #000886 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================63.3%====                      ]
+[22:12:58] [INFO] #000887 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=93
+[22:12:59] [INFO] #000888 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=572s idle=0s
+[22:13:00] [INFO] #000889 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:09:33
+[22:13:01] [INFO] #000890 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.16s
+[22:13:02] [INFO] #000891 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 0s ago, DISM updated 574s ago, movement=True
+[22:13:03] [INFO] #000892 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:13:04] [INFO] #000893 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.08s; DismHost#38812 cpu=0.08s
+[22:13:05] [INFO] #000894 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================63.3%====                      ]
+[22:13:06] [INFO] #000895 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=97
+[22:13:07] [INFO] #000896 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=580s idle=0s
+[22:13:08] [INFO] #000897 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:09:41
+[22:13:09] [INFO] #000898 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.16s
+[22:13:10] [INFO] #000899 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 1s ago, DISM updated 582s ago, movement=True
+[22:13:11] [INFO] #000900 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:13:12] [INFO] #000901 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.08s; DismHost#38812 cpu=0.08s
+[22:13:14] [INFO] #000902 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================63.3%====                      ]
+[22:13:15] [INFO] #000903 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=101
+[22:13:16] [INFO] #000904 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=589s idle=0s
+[22:13:17] [INFO] #000905 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 101 repeated copies of '[===========================63.3%====                      ]' before new output arrived
+[22:13:17] [OUTPUT] #000906 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================63.8%====                      ]
+[22:13:17] [INFO] #000907 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 0s ago, DISM updated 589s ago, movement=True
+[22:13:18] [OUTPUT] #000908 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================64.1%=====                     ]
+[22:13:18] [INFO] #000909 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.08s; DismHost#38812 cpu=0.08s
+[22:13:19] [INFO] #000910 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================64.1%=====                     ]
+[22:13:20] [INFO] #000911 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=0
+[22:13:21] [INFO] #000912 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=594s idle=0s
+[22:13:22] [INFO] #000913 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:09:54
+[22:13:23] [INFO] #000914 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +64B, stderr +0B, child CPU total 0.16s
+[22:13:24] [INFO] #000915 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 0s ago, DISM updated 596s ago, movement=True
+[22:13:25] [INFO] #000916 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:13:26] [INFO] #000917 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.08s; DismHost#38812 cpu=0.08s
+[22:13:27] [INFO] #000918 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================64.1%=====                     ]
+[22:13:28] [INFO] #000919 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=4
+[22:13:29] [INFO] #000920 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=602s idle=0s
+[22:13:30] [INFO] #000921 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:10:03
+[22:13:31] [INFO] #000922 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.16s
+[22:13:32] [INFO] #000923 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 0s ago, DISM updated 604s ago, movement=True
+[22:13:33] [INFO] #000924 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:13:34] [INFO] #000925 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.08s; DismHost#38812 cpu=0.08s
+[22:13:35] [INFO] #000926 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================64.1%=====                     ]
+[22:13:37] [INFO] #000927 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=9
+[22:13:38] [INFO] #000928 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=611s idle=0s
+[22:13:39] [INFO] #000929 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:10:11
+[22:13:40] [INFO] #000930 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +64B, stderr +0B, child CPU total 0.17s
+[22:13:41] [INFO] #000931 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 1s ago, DISM updated 613s ago, movement=True
+[22:13:42] [INFO] #000932 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:13:43] [INFO] #000933 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.09s; DismHost#38812 cpu=0.08s
+[22:13:44] [INFO] #000934 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================64.1%=====                     ]
+[22:13:45] [INFO] #000935 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=11
+[22:13:46] [INFO] #000936 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=619s idle=4s
+[22:13:47] [INFO] #000937 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:10:20
+[22:13:48] [INFO] #000938 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.17s
+[22:13:49] [INFO] #000939 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 9s ago, DISM updated 621s ago, movement=False
+[22:13:50] [INFO] #000940 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=8s; auto-stop/retry protection in 232s if nothing changes
+[22:13:51] [INFO] #000941 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.09s; DismHost#38812 cpu=0.08s
+[22:13:52] [INFO] #000942 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================64.1%=====                     ]
+[22:13:53] [INFO] #000943 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=11
+[22:13:54] [INFO] #000944 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=627s idle=1s
+[22:13:55] [INFO] #000945 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:10:28
+[22:13:56] [INFO] #000946 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.17s
+[22:13:57] [INFO] #000947 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 6s ago, DISM updated 629s ago, movement=False
+[22:13:58] [INFO] #000948 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=5s; auto-stop/retry protection in 235s if nothing changes
+[22:13:59] [INFO] #000949 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.09s; DismHost#38812 cpu=0.08s
+[22:14:00] [INFO] #000950 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================64.1%=====                     ]
+[22:14:02] [INFO] #000951 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=11
+[22:14:03] [INFO] #000952 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=636s idle=0s
+[22:14:04] [INFO] #000953 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:10:36
+[22:14:05] [INFO] #000954 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.34s
+[22:14:06] [INFO] #000955 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 4s ago, DISM updated 4s ago, movement=False
+[22:14:07] [INFO] #000956 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=3s; auto-stop/retry protection in 237s if nothing changes
+[22:14:08] [INFO] #000957 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.09s; Dism#38664 cpu=0.09s; DismHost#18736 cpu=0.08s; DismHost#38812 cpu=0.08s
+[22:14:09] [INFO] #000958 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================64.1%=====                     ]
+[22:14:10] [INFO] #000959 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=11
+[22:14:11] [INFO] #000960 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=644s idle=7s
+[22:14:12] [INFO] #000961 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:10:45
+[22:14:13] [INFO] #000962 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.34s
+[22:14:14] [INFO] #000963 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 12s ago, DISM updated 12s ago, movement=False
+[22:14:15] [INFO] #000964 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=11s; auto-stop/retry protection in 229s if nothing changes
+[22:14:16] [INFO] #000965 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.09s; Dism#38664 cpu=0.09s; DismHost#18736 cpu=0.08s; DismHost#38812 cpu=0.08s
+[22:14:17] [INFO] #000966 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================64.1%=====                     ]
+[22:14:18] [INFO] #000967 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=11
+[22:14:19] [INFO] #000968 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=652s idle=0s
+[22:14:20] [INFO] #000969 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:10:53
+[22:14:21] [INFO] #000970 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.34s
+[22:14:22] [INFO] #000971 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 4s ago, DISM updated 20s ago, movement=False
+[22:14:23] [INFO] #000972 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=3s; auto-stop/retry protection in 237s if nothing changes
+[22:14:24] [INFO] #000973 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.09s; Dism#38664 cpu=0.09s; DismHost#18736 cpu=0.08s; DismHost#38812 cpu=0.08s
+[22:14:25] [INFO] #000974 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================64.1%=====                     ]
+[22:14:26] [INFO] #000975 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=11
+[22:14:27] [INFO] #000976 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=661s idle=7s
+[22:14:28] [INFO] #000977 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:11:01
+[22:14:29] [INFO] #000978 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.34s
+[22:14:30] [INFO] #000979 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 12s ago, DISM updated 29s ago, movement=False
+[22:14:32] [INFO] #000980 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=11s; auto-stop/retry protection in 229s if nothing changes
+[22:14:33] [INFO] #000981 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.09s; Dism#38664 cpu=0.09s; DismHost#18736 cpu=0.08s; DismHost#38812 cpu=0.08s
+[22:14:34] [INFO] #000982 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================64.1%=====                     ]
+[22:14:35] [INFO] #000983 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=11
+[22:14:36] [INFO] #000984 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=669s idle=16s
+[22:14:37] [INFO] #000985 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:11:09
+[22:14:38] [INFO] #000986 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.34s
+[22:14:39] [INFO] #000987 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 20s ago, DISM updated 37s ago, movement=False
+[22:14:40] [INFO] #000988 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=20s; auto-stop/retry protection in 220s if nothing changes
+[22:14:41] [INFO] #000989 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.09s; Dism#38664 cpu=0.09s; DismHost#18736 cpu=0.08s; DismHost#38812 cpu=0.08s
+[22:14:42] [INFO] #000990 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================64.1%=====                     ]
+[22:14:43] [INFO] #000991 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=11
+[22:14:44] [INFO] #000992 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=677s idle=24s
+[22:14:45] [INFO] #000993 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:11:18
+[22:14:46] [INFO] #000994 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.34s
+[22:14:47] [INFO] #000995 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 29s ago, DISM updated 45s ago, movement=False
+[22:14:48] [INFO] #000996 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=28s; auto-stop/retry protection in 212s if nothing changes
+[22:14:49] [INFO] #000997 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.09s; Dism#38664 cpu=0.09s; DismHost#18736 cpu=0.08s; DismHost#38812 cpu=0.08s
+[22:14:50] [INFO] #000998 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 last native message: [===========================64.1%=====                     ]
+[22:14:51] [INFO] #000999 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 overall repair progress now 25% across all checks and repairs; suppressed duplicate native lines=11
+[22:14:52] [INFO] #001000 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=685s idle=32s
+[22:14:53] [INFO] #001001 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:11:26
+[22:14:54] [INFO] #001002 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 evidence: stdout +0B, stderr +0B, child CPU total 0.34s
+[22:14:55] [INFO] #001003 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 37s ago, DISM updated 53s ago, movement=False
+[22:14:56] [INFO] #001004 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=36s; auto-stop/retry protection in 204s if nothing changes
+[22:14:57] [INFO] #001005 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.09s; Dism#38664 cpu=0.09s; DismHost#18736 cpu=0.08s; DismHost#38812 cpu=0.08s
+[22:14:58] [INFO] #001006 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native duplicate suppression: skipped 11 repeated copies of '[===========================64.1%=====                     ]' before new output arrived
+[22:14:58] [OUTPUT] #001007 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================64.4%=====                     ]
+[22:14:58] [INFO] #001008 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 watchdog: no silent hang allowed; timeout=10800s elapsed=691s idle=0s
+[22:14:59] [INFO] #001009 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 95%: native percent when available, otherwise anti-stall timer; elapsed=00:11:32
+[22:15:00] [OUTPUT] #001010 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 native says: [===========================65.3%=====                     ]
+[22:15:00] [INFO] #001011 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 live logs: CBS updated 1s ago, DISM updated 59s ago, movement=True
+[22:15:01] [INFO] #001012 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 safety clock: idle=0s; auto-stop/retry protection in 240s if nothing changes
+[22:15:02] [INFO] #001013 overall=25% phase=95% :: DISM RestoreHealth online attempt 1 process map: Dism#11620 cpu=0.09s; Dism#38664 cpu=0.09s; DismHost#18736 cpu=0.08s; DismHost#38812 cpu=0.08s

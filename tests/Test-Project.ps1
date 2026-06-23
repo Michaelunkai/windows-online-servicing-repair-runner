@@ -22,6 +22,12 @@ $required = @(
     'Invoke-RestoreHealthResilient',
     'Enable-OnlineRepairSource',
     'Reset-WindowsUpdateRepairCache',
+    'Test-RecentDismRepairSourceFailure',
+    '0x800f0915',
+    'UseWUServer',
+    'RepairContentServerSource',
+    'NeverAttemptPayloadDownload',
+    'final preflight',
     'dism /online /cleanup-image /restorehealth; $d=$LASTEXITCODE; sfc /scannow'
 )
 

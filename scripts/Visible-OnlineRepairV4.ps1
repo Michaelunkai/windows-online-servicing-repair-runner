@@ -24,6 +24,7 @@ $script:LastProgressActivity = ''
 $script:LastProgressStatus = ''
 $script:LastProgressPercent = -1
 $script:LastMilestonePercent = -1
+$script:RestoreHealthSucceeded = $false
 $script:PrintedLineKeys = New-Object 'System.Collections.Generic.HashSet[string]'
 
 function Stamp { Get-Date -Format 'HH:mm:ss' }
@@ -207,10 +208,29 @@ function Start-RepairServices {
     }
 }
 
+function Restart-RepairSourceServices {
+    param([string]$Reason)
+    Show-Line ("repair-source services: controlled restart for {0}" -f $Reason) 'INFO' 2 28
+    foreach ($svc in 'wuauserv','bits','cryptsvc','TrustedInstaller') {
+        try {
+            $service = Get-Service -Name $svc -ErrorAction SilentlyContinue
+            if ($service -and $service.Status -eq 'Running' -and $svc -ne 'TrustedInstaller') {
+                Stop-Service -Name $svc -Force -ErrorAction SilentlyContinue
+                Show-Line ("repair-source services: stopped {0}" -f $svc) 'INFO' 2 29
+            }
+        }
+        catch {
+            Show-Line ("repair-source services: stop warning for {0}: {1}" -f $svc, $_.Exception.Message) 'WARN' 2 29
+        }
+    }
+    Start-Sleep -Seconds 2
+    Start-RepairServices
+}
+
 function Enable-OnlineRepairSource {
     $backup = Join-Path $Root 'repair-source-policy-before.json'
     $items = @()
-    foreach ($path in 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU','HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Servicing') {
+    foreach ($path in 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate','HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU','HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Servicing') {
         if (Test-Path -LiteralPath $path) {
             $props = Get-ItemProperty -LiteralPath $path
             $items += [pscustomobject]@{ Path = $path; Properties = $props }
@@ -219,11 +239,19 @@ function Enable-OnlineRepairSource {
     $items | ConvertTo-Json -Depth 4 | Set-Content -LiteralPath $backup -Encoding UTF8 -ErrorAction SilentlyContinue
     Show-Line ("repair-source policy snapshot saved: {0}" -f $backup) 'INFO' 2 20
 
+    New-Item -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate' -Force -ErrorAction SilentlyContinue | Out-Null
     New-Item -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU' -Force -ErrorAction SilentlyContinue | Out-Null
     New-ItemProperty -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU' -Name NoAutoUpdate -Value 0 -PropertyType DWord -Force -ErrorAction SilentlyContinue | Out-Null
+    New-ItemProperty -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU' -Name UseWUServer -Value 0 -PropertyType DWord -Force -ErrorAction SilentlyContinue | Out-Null
+    foreach ($name in 'DisableWindowsUpdateAccess','SetPolicyDrivenUpdateSourceForDriverUpdates','SetPolicyDrivenUpdateSourceForFeatureUpdates','SetPolicyDrivenUpdateSourceForOtherUpdates','SetPolicyDrivenUpdateSourceForQualityUpdates') {
+        New-ItemProperty -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate' -Name $name -Value 0 -PropertyType DWord -Force -ErrorAction SilentlyContinue | Out-Null
+    }
     New-Item -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Servicing' -Force -ErrorAction SilentlyContinue | Out-Null
-    New-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Servicing' -Name UseWindowsUpdate -Value 2 -PropertyType DWord -Force -ErrorAction SilentlyContinue | Out-Null
-    Show-Line 'repair-source policy opened: Windows Update allowed for component repair; previous values preserved in the run log folder' 'INFO' 2 25
+    Remove-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Servicing' -Name UseWindowsUpdate -ErrorAction SilentlyContinue
+    New-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Servicing' -Name NeverAttemptPayloadDownload -Value 0 -PropertyType DWord -Force -ErrorAction SilentlyContinue | Out-Null
+    New-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Servicing' -Name RepairContentServerSource -Value 2 -PropertyType DWord -Force -ErrorAction SilentlyContinue | Out-Null
+    Show-Line 'repair-source policy opened: Microsoft repair payloads allowed; WSUS-only blocking disabled; previous values preserved in the run log folder' 'INFO' 2 25
+    Restart-RepairSourceServices -Reason 'policy refresh'
 }
 
 function Reset-WindowsUpdateRepairCache {
@@ -250,7 +278,7 @@ function Reset-WindowsUpdateRepairCache {
             }
         }
     }
-    Start-RepairServices
+    Restart-RepairSourceServices -Reason 'cache rotation'
     try {
         & "$env:windir\System32\UsoClient.exe" StartScan 2>$null
         Show-Line 'repair-source reset: requested Windows Update scan for fresh repair payload metadata' 'INFO' 2 55
@@ -258,6 +286,57 @@ function Reset-WindowsUpdateRepairCache {
     catch {
         Show-Line ("repair-source reset: UsoClient scan request skipped: {0}" -f $_.Exception.Message) 'WARN' 2 55
     }
+}
+
+function Test-RecentDismRepairSourceFailure {
+    $dismLog = Join-Path $env:windir 'Logs\DISM\dism.log'
+    if (-not (Test-Path -LiteralPath $dismLog)) { return $false }
+    try {
+        $tail = Get-Content -LiteralPath $dismLog -Tail 250 -ErrorAction Stop
+        return (($tail -match '0x800f0915|repair content could not be found|source files could not be found|source option to specify the location').Count -gt 0)
+    }
+    catch {
+        Show-Line ("DISM log source-failure check skipped: {0}" -f $_.Exception.Message) 'WARN' 2 56
+        return $false
+    }
+}
+
+function Get-WindowsEditionText {
+    $edition = (Get-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion' -ErrorAction SilentlyContinue).EditionID
+    $caption = (Get-CimInstance Win32_OperatingSystem -ErrorAction SilentlyContinue).Caption
+    return ("{0} {1}" -f $caption, $edition).Trim()
+}
+
+function Get-MatchingInstallImageIndexes {
+    param([string]$ImageFile)
+    $editionText = Get-WindowsEditionText
+    $indexes = New-Object System.Collections.Generic.List[int]
+    try {
+        $info = & "$env:windir\System32\dism.exe" /English /Get-WimInfo /WimFile:"$ImageFile" 2>$null
+        $currentIndex = $null
+        $currentText = ''
+        foreach ($line in $info) {
+            if ($line -match '^\s*Index\s*:\s*(\d+)') {
+                if ($currentIndex -and ($currentText -match [regex]::Escape($editionText) -or $currentText -match 'Windows\s+11|Windows\s+10')) {
+                    [void]$indexes.Add([int]$currentIndex)
+                }
+                $currentIndex = [int]$matches[1]
+                $currentText = ''
+                continue
+            }
+            if ($currentIndex) { $currentText += ' ' + $line }
+        }
+        if ($currentIndex -and ($currentText -match [regex]::Escape($editionText) -or $currentText -match 'Windows\s+11|Windows\s+10')) {
+            [void]$indexes.Add([int]$currentIndex)
+        }
+    }
+    catch {
+        Show-Line ("install image index detection warning for {0}: {1}" -f $ImageFile, $_.Exception.Message) 'WARN' 2 57
+    }
+    if ($indexes.Count -eq 0) {
+        foreach ($i in 1..12) { [void]$indexes.Add($i) }
+    }
+    return @($indexes | Select-Object -Unique)
 }
 
 function Get-InstallImageSources {
@@ -272,7 +351,7 @@ function Get-InstallImageSources {
             if (Test-Path -LiteralPath $candidate) {
                 $prefix = 'WIM'
                 if ($candidate -like '*.esd') { $prefix = 'ESD' }
-                for ($i = 1; $i -le 12; $i++) {
+                foreach ($i in Get-MatchingInstallImageIndexes -ImageFile $candidate) {
                     $sources.Add(('/Source:{0}:{1}:{2}' -f $prefix, $candidate, $i))
                 }
             }
@@ -335,10 +414,13 @@ function Invoke-RestoreHealthResilient {
         $code = Invoke-Phase -Name $a.Name -Exe "$env:windir\System32\dism.exe" -Arguments $a.Args -StallSeconds $a.Stall -TimeoutSeconds $a.Timeout
         if ($code -eq 0) {
             Show-Line ("RestoreHealth recovered successfully on attempt {0}: {1}" -f ($i + 1), $a.Name) 'PASS' (Get-Overall $script:PhaseIndex 100) 100
+            $script:RestoreHealthSucceeded = $true
             return 0
         }
-        Show-Line ("RestoreHealth attempt failed with {0}; preparing stronger source path before next attempt" -f $code) 'WARN' (Get-Overall $script:PhaseIndex 100) 100
-        if ($i -eq 0) {
+        $sourceMissing = Test-RecentDismRepairSourceFailure
+        Show-Line ("RestoreHealth attempt failed with {0}; sourceMissing={1}; preparing stronger source path before next attempt" -f $code, $sourceMissing) 'WARN' (Get-Overall $script:PhaseIndex 100) 100
+        if ($sourceMissing -or $i -eq 0) {
+            Enable-OnlineRepairSource
             [void](Invoke-Phase -Name 'DISM StartComponentCleanup before source retry' -Exe "$env:windir\System32\dism.exe" -Arguments '/Online /Cleanup-Image /StartComponentCleanup' -StallSeconds 180 -TimeoutSeconds 7200)
             Reset-WindowsUpdateRepairCache
         }
@@ -346,11 +428,23 @@ function Invoke-RestoreHealthResilient {
 
     [void](Invoke-WindowsUpdateRepairInstall)
     $code = Invoke-Phase -Name 'DISM RestoreHealth after Windows Update repair-source refresh' -Exe "$env:windir\System32\dism.exe" -Arguments '/Online /Cleanup-Image /RestoreHealth' -StallSeconds 240 -TimeoutSeconds 10800
-    if ($code -eq 0) { return 0 }
+    if ($code -eq 0) {
+        $script:RestoreHealthSucceeded = $true
+        return 0
+    }
     return $code
 }
 
 function Invoke-FinalRequiredOneLiner {
+    if (-not $script:RestoreHealthSucceeded -or (Test-RecentDismRepairSourceFailure)) {
+        Show-Line 'final preflight: forcing one last repair-source hardening before mandated plain DISM/SFC gate' 'WARN' 97 0
+        Enable-OnlineRepairSource
+        Reset-WindowsUpdateRepairCache
+        $preflight = Invoke-RestoreHealthResilient
+        if ($preflight -ne 0) {
+            Show-Line ("final preflight warning: resilient RestoreHealth still returned {0}; mandated final one-liner will run last for proof" -f $preflight) 'WARN' 97 50
+        }
+    }
     $ps5 = "$env:windir\System32\WindowsPowerShell\v1.0\powershell.exe"
     $finalScript = Join-Path $Root 'FINAL_REQUIRED_DISM_THEN_SFC.ps1'
     @(

@@ -15,6 +15,7 @@ Run from an elevated Windows PowerShell 5 window. The script intentionally perfo
 - Uses a real-time `Write-Progress` bar from start to finish.
 - Suppresses repeated native output and prints unique milestones, warnings, phase starts, phase ends, and changed native output.
 - Opens Windows Update as a repair source and snapshots prior policy state in each run folder.
+- Specifically detects DISM `0x800f0915` / missing repair content failures, disables WSUS-only repair-source blocking, and retries after cache/service refresh.
 - Starts servicing/update services needed by DISM repair.
 - Retries `RestoreHealth` with cache reset, WinSxS source, discovered install image sources, and Windows Update repair-source refresh.
 - Runs the final required one-liner as the last gate:
